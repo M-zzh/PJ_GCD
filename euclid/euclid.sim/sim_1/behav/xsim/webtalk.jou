@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Oct 30 19:02:30 2020
+# Process ID: 16896
+# Current directory: /home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim/xsim.dir/gcd_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim/xsim.dir/gcd_tb_behav/webtalk/xsim_webtalk.tcl -notrace

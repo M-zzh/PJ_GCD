@@ -1,0 +1,736 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Oct 30 15:59:33 2020
+# Process ID: 2015
+# Current directory: /home/ubuntu/work/ic/gcd
+# Command line: vivado
+# Log file: /home/ubuntu/work/ic/gcd/vivado.log
+# Journal file: /home/ubuntu/work/ic/gcd/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project euclid /home/ubuntu/work/ic/gcd/euclid -part xc7z020clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/disk3/Software/Xilinx/Vivado/2018.2/data/ip'.
+set_property board_part digilentinc.com:arty-z7-20:part0:1.0 [current_project]
+file mkdir /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new
+close [ open /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v w ]
+add_files /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-1
+Top: gcd
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 6332.602 ; gain = 47.996 ; free physical = 3035 ; free virtual = 16007
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'gcd' [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'gcd' (1#1) [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 6376.227 ; gain = 91.621 ; free physical = 3058 ; free virtual = 16031
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 6376.227 ; gain = 91.621 ; free physical = 3050 ; free virtual = 16023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 6376.227 ; gain = 91.621 ; free physical = 3049 ; free virtual = 16022
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 6742.234 ; gain = 457.629 ; free physical = 2701 ; free virtual = 15681
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 6742.234 ; gain = 457.629 ; free physical = 2699 ; free virtual = 15679
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7296.512 ; gain = 0.000 ; free physical = 1944 ; free virtual = 15011
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'gcd' [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v:23]
+	Parameter IDLE bound to: 3'b000 
+	Parameter BUSY bound to: 3'b001 
+INFO: [Synth 8-226] default block is never used [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v:72]
+INFO: [Synth 8-226] default block is never used [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'gcd' (1#1) [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7312.504 ; gain = 15.992 ; free physical = 1963 ; free virtual = 15030
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7312.504 ; gain = 15.992 ; free physical = 1964 ; free virtual = 15031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7312.504 ; gain = 15.992 ; free physical = 1964 ; free virtual = 15031
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 7396.945 ; gain = 100.434 ; free physical = 1953 ; free virtual = 15020
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7396.949 ; gain = 0.000 ; free physical = 1955 ; free virtual = 15024
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'gcd' [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v:23]
+	Parameter IDLE bound to: 3'b000 
+	Parameter BUSY bound to: 3'b001 
+INFO: [Synth 8-226] default block is never used [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v:70]
+INFO: [Synth 8-226] default block is never used [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'gcd' (1#1) [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7396.949 ; gain = 0.000 ; free physical = 1974 ; free virtual = 15043
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7396.949 ; gain = 0.000 ; free physical = 1975 ; free virtual = 15045
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7396.949 ; gain = 0.000 ; free physical = 1975 ; free virtual = 15045
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+launch_runs synth_1 -jobs 4
+[Fri Oct 30 18:26:18 2020] Launched synth_1...
+Run output will be captured here: /home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+INFO: [Netlist 29-17] Analyzing 359 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'gcd' is not ideal for floorplanning, since the cellview 'gcd' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+create_clock -period 2.000 -name clk -waveform {0.000 1.000} [get_ports clk]
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 100 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 7878.883 ; gain = 0.000 ; free physical = 1461 ; free virtual = 14535
+file mkdir /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v w ]
+add_files -fileset sim_1 /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v
+update_compile_order -fileset sim_1
+set_property top gcd_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+file mkdir /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new
+close [ open /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc w ]
+add_files -fileset constrs_1 /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc
+set_property target_constrs_file /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc [current_fileset -constrset]
+save_constraints -force
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'gcd_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj gcd_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gcd_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /mnt/disk3/Software/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto c849499e73044d4dba888b90678b7c42 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot gcd_tb_behav xil_defaultlib.gcd_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gcd_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot gcd_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim/xsim.dir/gcd_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct 30 18:59:22 2020...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 8171.027 ; gain = 4.996 ; free physical = 949 ; free virtual = 14198
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "gcd_tb_behav -key {Behavioral:sim_1:Functional:gcd_tb} -tclbatch {gcd_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source gcd_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+                   0; out=         z
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'gcd_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 8239.852 ; gain = 73.820 ; free physical = 914 ; free virtual = 14172
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'gcd_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj gcd_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gcd_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /mnt/disk3/Software/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto c849499e73044d4dba888b90678b7c42 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot gcd_tb_behav xil_defaultlib.gcd_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gcd
+Compiling module xil_defaultlib.gcd_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot gcd_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+                   0; out=         x
+                   1; out=         0
+                  46; out=         4
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 8271.875 ; gain = 0.000 ; free physical = 907 ; free virtual = 14167
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 50 ns
+                   0; out=         x
+                   1; out=         0
+                  46; out=         4
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 50 ns
+                   0; out=         x
+                   1; out=         0
+                  46; out=         4
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'gcd_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj gcd_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gcd_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /mnt/disk3/Software/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto c849499e73044d4dba888b90678b7c42 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot gcd_tb_behav xil_defaultlib.gcd_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gcd
+Compiling module xil_defaultlib.gcd_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot gcd_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+                   0; out=         x
+                   1; out=         0
+                  26; out=        12
+                 106; out=         8
+                 146; out=         3
+                 166; out=      1212
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'gcd_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj gcd_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gcd_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /mnt/disk3/Software/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto c849499e73044d4dba888b90678b7c42 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot gcd_tb_behav xil_defaultlib.gcd_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gcd
+Compiling module xil_defaultlib.gcd_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot gcd_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+                  26; A=      1212; B=        12; out=        12
+                  26; A=      1212; B=      2424; out=        12
+                  31; A=     12112; B=    121432; out=        12
+                  36; A=        22; B=       753; out=        12
+                 106; A=        22; B=       753; out=         8
+                 106; A=     75288; B=       256; out=         8
+                 111; A=       369; B=        12; out=         8
+                 116; A=      3693; B=         1; out=         8
+                 146; A=      3693; B=         1; out=         3
+                 146; A=      1212; B=      1212; out=         3
+                 166; A=      1212; B=      1212; out=      1212
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'gcd_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj gcd_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gcd_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /mnt/disk3/Software/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto c849499e73044d4dba888b90678b7c42 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot gcd_tb_behav xil_defaultlib.gcd_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gcd
+Compiling module xil_defaultlib.gcd_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot gcd_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'gcd_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj gcd_tb_vlog.prj
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /mnt/disk3/Software/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto c849499e73044d4dba888b90678b7c42 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot gcd_tb_behav xil_defaultlib.gcd_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+add_bp {/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v} 85
+remove_bps -file {/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v} -line 85
+add_bp {/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v} 87
+run all
+run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 8368.914 ; gain = 0.000 ; free physical = 587 ; free virtual = 14068
+add_bp {/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v} 86
+add_bp {/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v} 85
+add_bp {/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v} 84
+add_bp {/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v} 83
+add_bp {/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v} 88
+remove_bps -file {/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v} -line 83
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Stopped at time : 10 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 84
+run all
+Stopped at time : 10 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 85
+run all
+Stopped at time : 10 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 86
+run all
+Stopped at time : 10 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 87
+run all
+Stopped at time : 10 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 88
+run all
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 8368.918 ; gain = 0.000 ; free physical = 669 ; free virtual = 14085
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'gcd_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj gcd_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gcd_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /mnt/disk3/Software/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto c849499e73044d4dba888b90678b7c42 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot gcd_tb_behav xil_defaultlib.gcd_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gcd
+Compiling module xil_defaultlib.gcd_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot gcd_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+Stopped at time : 10 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 84
+add_bp {/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v} 89
+add_bp {/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v} 91
+add_bp {/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v} 90
+run all
+Stopped at time : 10 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 85
+run all
+Stopped at time : 10 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 86
+run all
+Stopped at time : 10 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 87
+run all
+Stopped at time : 15 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 88
+run all
+Stopped at time : 15 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 89
+run all
+Stopped at time : 15 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 90
+run all
+Stopped at time : 15 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 91
+run all
+                  26; A=      1212; B=        12; out=        12
+Stopped at time : 26 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 84
+run all
+Stopped at time : 26 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 85
+run all
+Stopped at time : 26 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 86
+run all
+Stopped at time : 26 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 87
+run all
+                  26; A=      1212; B=      2424; out=        12
+Stopped at time : 31 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 88
+run all
+Stopped at time : 35 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 89
+run all
+Stopped at time : 35 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 90
+run all
+Stopped at time : 35 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 91
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'gcd_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj gcd_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gcd_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /mnt/disk3/Software/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto c849499e73044d4dba888b90678b7c42 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot gcd_tb_behav xil_defaultlib.gcd_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gcd
+Compiling module xil_defaultlib.gcd_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot gcd_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+Stopped at time : 10 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 84
+run all
+Stopped at time : 10 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 85
+run all
+Stopped at time : 10 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 86
+run all
+Stopped at time : 10 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 87
+run all
+Stopped at time : 15 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 88
+run all
+Stopped at time : 15 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 89
+run all
+Stopped at time : 20 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 90
+run all
+Stopped at time : 20 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 91
+run all
+                  26; A=      1212; B=        12; out=        12
+Stopped at time : 26 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 84
+run all
+Stopped at time : 26 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 85
+run all
+Stopped at time : 26 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 86
+run all
+Stopped at time : 26 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 87
+run all
+                  26; A=      1212; B=      2424; out=        12
+Stopped at time : 31 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 88
+run all
+Stopped at time : 35 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 89
+run all
+Stopped at time : 40 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 90
+run all
+Stopped at time : 40 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 91
+run all
+                  46; A=      1212; B=      2424; out=      1212
+Stopped at time : 46 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 84
+remove_bps -file {/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v} -line 84
+remove_bps -file {/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v} -line 85
+remove_bps -file {/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v} -line 87
+remove_bps -file {/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v} -line 86
+remove_bps -file {/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v} -line 88
+remove_bps -file {/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v} -line 89
+remove_bps -file {/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v} -line 90
+remove_bps -file {/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v} -line 91
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'gcd_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj gcd_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gcd_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /mnt/disk3/Software/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto c849499e73044d4dba888b90678b7c42 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot gcd_tb_behav xil_defaultlib.gcd_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gcd
+Compiling module xil_defaultlib.gcd_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot gcd_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+                  26; A=      1212; B=        12; out=        12
+                  26; A=      1212; B=      2424; out=        12
+                  46; A=      1212; B=      2424; out=      1212
+                  46; A=     12112; B=    121432; out=      1212
+                 126; A=     12112; B=    121432; out=         8
+                 126; A=        22; B=       753; out=         8
+                 176; A=        22; B=       753; out=         1
+                 176; A=     75288; B=       256; out=         1
+                 226; A=     75288; B=       256; out=         8
+                 226; A=       369; B=        12; out=         8
+                 266; A=       369; B=        12; out=         3
+                 266; A=      3693; B=         1; out=         3
+                 286; A=      3693; B=         1; out=         1
+                 286; A=      1212; B=      1212; out=         1
+                 306; A=      1212; B=      1212; out=      1212
+                 326; A=      1212; B=      1212; out=      1212
+                 346; A=      1212; B=      1212; out=      1212
+$finish called at time : 366 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 95
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'gcd_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj gcd_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gcd_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /mnt/disk3/Software/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto c849499e73044d4dba888b90678b7c42 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot gcd_tb_behav xil_defaultlib.gcd_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gcd
+Compiling module xil_defaultlib.gcd_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot gcd_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+                  26; A=      1212; B=      2424; out=        12
+                  46; A=     12112; B=    121432; out=      1212
+                 126; A=        22; B=       753; out=         8
+                 176; A=     75288; B=       256; out=         1
+                 226; A=       369; B=        12; out=         8
+                 266; A=      3693; B=         1; out=         3
+                 286; A=      1212; B=      1212; out=         1
+                 306; A=      1212; B=      1212; out=      1212
+                 326; A=      1212; B=      1212; out=      1212
+                 346; A=      1212; B=      1212; out=      1212
+$finish called at time : 366 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 95
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'gcd_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj gcd_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gcd_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ubuntu/work/ic/gcd/euclid/euclid.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /mnt/disk3/Software/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto c849499e73044d4dba888b90678b7c42 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot gcd_tb_behav xil_defaultlib.gcd_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gcd
+Compiling module xil_defaultlib.gcd_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot gcd_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+                  26; A=      1212; B=        12; out=        12
+                  46; A=      1212; B=      2424; out=      1212
+                 126; A=     12112; B=    121432; out=         8
+                 176; A=        22; B=       753; out=         1
+                 226; A=     75288; B=       256; out=         8
+                 266; A=       369; B=        12; out=         3
+                 286; A=      3693; B=         1; out=         1
+                 306; A=      1212; B=      1212; out=      1212
+                 326; A=      1212; B=      1212; out=      1212
+                 346; A=      1212; B=      1212; out=      1212
+                 366; A=      1212; B=      1212; out=      1212
+$finish called at time : 368 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 96
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 8387.922 ; gain = 0.000 ; free physical = 815 ; free virtual = 14074
+close_sim
+INFO: [Simtcl 6-16] Simulation closed

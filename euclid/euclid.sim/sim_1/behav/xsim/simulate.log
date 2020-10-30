@@ -1,0 +1,14 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+                  26; A=      1212; B=        12; out=        12
+                  46; A=      1212; B=      2424; out=      1212
+                 126; A=     12112; B=    121432; out=         8
+                 176; A=        22; B=       753; out=         1
+                 226; A=     75288; B=       256; out=         8
+                 266; A=       369; B=        12; out=         3
+                 286; A=      3693; B=         1; out=         1
+                 306; A=      1212; B=      1212; out=      1212
+                 326; A=      1212; B=      1212; out=      1212
+                 346; A=      1212; B=      1212; out=      1212
+                 366; A=      1212; B=      1212; out=      1212
+$finish called at time : 368 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sim_1/new/gcd_tb.v" Line 96
