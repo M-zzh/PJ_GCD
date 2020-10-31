@@ -17,9 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache ./.Xil/Vivado-2015-ubuntu/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -32,7 +29,7 @@ set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:arty-z7-20:part0:1.0 [current_project]
 set_property ip_output_repo /home/ubuntu/work/ic/gcd/euclid/euclid.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd.v
+read_verilog -library xil_defaultlib /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -41,15 +38,18 @@ read_verilog -library xil_defaultlib /home/ubuntu/work/ic/gcd/euclid/euclid.srcs
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc
+set_property used_in_implementation false [get_files /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc]
+
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 
-synth_design -top gcd -part xc7z020clg400-1
+synth_design -top gcd_test -part xc7z020clg400-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef gcd.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file gcd_utilization_synth.rpt -pb gcd_utilization_synth.pb"
+write_checkpoint -force -noxdef gcd_test.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file gcd_test_utilization_synth.rpt -pb gcd_test_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

@@ -734,3 +734,6 @@ $finish called at time : 368 ns : File "/home/ubuntu/work/ic/gcd/euclid/euclid.s
 relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 8387.922 ; gain = 0.000 ; free physical = 815 ; free virtual = 14074
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
+close_design
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 31 16:25:42 2020...
