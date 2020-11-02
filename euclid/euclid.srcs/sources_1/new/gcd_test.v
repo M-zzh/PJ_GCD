@@ -65,166 +65,189 @@ module gcd_test(
     end
     endgenerate
 
+    /////////////////////////////////////Pipeline_reg_1
+    reg                 [31:0]          rShift              [0:31];
+    reg                 [31:0]          rCompMax;
+    integer                             ppl_i;
+    always @(posedge clk ) begin
+        for (ppl_i = 0; ppl_i<32; ppl_i=ppl_i+1) begin
+            rShift      [ppl_i]     <=  oShift              [ppl_i];
+            rCompMax                <=  oCompMax;
+        end
+    end
+
     ////////////////////////////////////Sub
     wire                [31:0]          oSub                [0:31];
     genvar Sub_i;
     generate for(Sub_i=0;Sub_i<32;Sub_i=Sub_i+1) begin : SubArray
-        assign oSub     [Sub_i]     =           oCompMax    -   oShift[Sub_i];
+        assign oSub     [Sub_i]     =           rCompMax    -   rShift[Sub_i];
     end
     endgenerate
 
     /////////////////////////////////////Compare_Array
-    wire                [31:0]          oCompA;
+    wire                [31:0]          oCompArr;
     genvar Comp_i;
     generate for(Comp_i=0;Comp_i<32;Comp_i=Comp_i+1) begin : CompArray
-        assign oCompA   [Comp_i]    =   (oShift [Comp_i]    <   oCompMax);
+        assign oCompArr [Comp_i]    =   ({1'b0, rShift [Comp_i]}    <   {1'b0, rCompMax});
     end
     endgenerate
+
+    /////////////////////////////////////Pipeline_reg_2
+    reg                 [31:0]          rSub                [0:31];
+    reg                 [31:0]          rCompArr;
+    always @(posedge clk ) begin
+        for (ppl_i = 0; ppl_i<32; ppl_i=ppl_i+1) begin
+            rSub        [ppl_i]     <=  oSub                [ppl_i];
+        end
+        rCompArr                    <=  oCompArr;
+    end
+
 
     /////////////////////////////////////Mux
     reg                 [31:0]         oMuxDiv;
     reg                 [31:0]         oMuxMod;
 
 
-always @(posedge clk ) begin
-    case (oCompA)
-    32'h0000_0000 : begin
-                        oMuxDiv     <=  oShift[0];
-                        oMuxMod     <=  oSub[0];
-                    end
-    32'h0000_0001 : begin
-                        oMuxDiv     <=  oShift[1];
-                        oMuxMod     <=  oSub[1];
-                    end
-    32'h0000_0002 : begin
-                        oMuxDiv     <=  oShift[2];
-                        oMuxMod     <=  oSub[2];
-                    end
-    32'h0000_0004 : begin
-                        oMuxDiv     <=  oShift[3];
-                        oMuxMod     <=  oSub[3];
-                    end
-    32'h0000_0008 : begin
-                        oMuxDiv     <=  oShift[4];
-                        oMuxMod     <=  oSub[4];
-                    end
-    32'h0000_0010 : begin
-                        oMuxDiv     <=  oShift[5];
-                        oMuxMod     <=  oSub[5];
-                    end
-    32'h0000_0020 : begin
-                        oMuxDiv     <=  oShift[6];
-                        oMuxMod     <=  oSub[6];
-                    end
-    32'h0000_0040 : begin
-                        oMuxDiv     <=  oShift[7];
-                        oMuxMod     <=  oSub[7];
-                    end
-    32'h0000_0080 : begin
-                        oMuxDiv     <=  oShift[8];
-                        oMuxMod     <=  oSub[8];
-                    end
-    32'h0000_0100 : begin
-                        oMuxDiv     <=  oShift[9];
-                        oMuxMod     <=  oSub[9];
-                    end
-    32'h0000_0200 : begin
-                        oMuxDiv     <=  oShift[10];
-                        oMuxMod     <=  oSub[10];
-                    end
-    32'h0000_0400 : begin
-                        oMuxDiv     <=  oShift[11];
-                        oMuxMod     <=  oSub[11];
-                    end
-    32'h0000_0800 : begin
-                        oMuxDiv     <=  oShift[12];
-                        oMuxMod     <=  oSub[12];
-                    end
-    32'h0000_1000 : begin
-                        oMuxDiv     <=  oShift[13];
-                        oMuxMod     <=  oSub[13];
-                    end
-    32'h0000_2000 : begin
-                        oMuxDiv     <=  oShift[14];
-                        oMuxMod     <=  oSub[14];
-                    end
-    32'h0000_4000 : begin
-                        oMuxDiv     <=  oShift[15];
-                        oMuxMod     <=  oSub[15];
-                    end
-    32'h0000_8000 : begin
-                        oMuxDiv     <=  oShift[16];
-                        oMuxMod     <=  oSub[16];
-                    end
+    always @(posedge clk ) begin
+        case (rCompArr)
+        32'h0000_0000 : begin
+                            oMuxDiv     <=  rShift[0];
+                            oMuxMod     <=  rSub[0];
+                        end
+        32'h0000_0001 : begin
+                            oMuxDiv     <=  rShift[1];
+                            oMuxMod     <=  rSub[1];
+                        end
+        32'h0000_0003 : begin
+                            oMuxDiv     <=  rShift[2];
+                            oMuxMod     <=  rSub[2];
+                        end
+        32'h0000_0007 : begin
+                            oMuxDiv     <=  rShift[3];
+                            oMuxMod     <=  rSub[3];
+                        end
+        32'h0000_000F : begin
+                            oMuxDiv     <=  rShift[4];
+                            oMuxMod     <=  rSub[4];
+                        end
+        32'h0000_001F : begin
+                            oMuxDiv     <=  rShift[5];
+                            oMuxMod     <=  rSub[5];
+                        end
+        32'h0000_003F : begin
+                            oMuxDiv     <=  rShift[6];
+                            oMuxMod     <=  rSub[6];
+                        end
+        32'h0000_007F : begin
+                            oMuxDiv     <=  rShift[7];
+                            oMuxMod     <=  rSub[7];
+                        end
+        32'h0000_00FF : begin
+                            oMuxDiv     <=  rShift[8];
+                            oMuxMod     <=  rSub[8];
+                        end
+        32'h0000_01FF : begin
+                            oMuxDiv     <=  rShift[9];
+                            oMuxMod     <=  rSub[9];
+                        end
+        32'h0000_03FF : begin
+                            oMuxDiv     <=  rShift[10];
+                            oMuxMod     <=  rSub[10];
+                        end
+        32'h0000_07FF : begin
+                            oMuxDiv     <=  rShift[11];
+                            oMuxMod     <=  rSub[11];
+                        end
+        32'h0000_0FFF : begin
+                            oMuxDiv     <=  rShift[12];
+                            oMuxMod     <=  rSub[12];
+                        end
+        32'h0000_1FFF : begin
+                            oMuxDiv     <=  rShift[13];
+                            oMuxMod     <=  rSub[13];
+                        end
+        32'h0000_3FFF : begin
+                            oMuxDiv     <=  rShift[14];
+                            oMuxMod     <=  rSub[14];
+                        end
+        32'h0000_7FFF : begin
+                            oMuxDiv     <=  rShift[15];
+                            oMuxMod     <=  rSub[15];
+                        end
+        32'h0000_FFFF : begin
+                            oMuxDiv     <=  rShift[16];
+                            oMuxMod     <=  rSub[16];
+                        end
 
-    32'h0001_0000 : begin
-                      oMuxDiv     <=  oShift[17];
-                        oMuxMod     <=  oSub[17];
-                    end
-    32'h0002_0000 : begin
-                        oMuxDiv     <=  oShift[18];
-                        oMuxMod     <=  oSub[18];
-                    end
-    32'h0004_0000 : begin
-                        oMuxDiv     <=  oShift[19];
-                        oMuxMod     <=  oSub[19];
-                    end
-    32'h0008_0000 : begin
-                        oMuxDiv     <=  oShift[20];
-                        oMuxMod     <=  oSub[20];
-                    end
-    32'h0010_0000 : begin
-                        oMuxDiv     <=  oShift[21];
-                        oMuxMod     <=  oSub[21];
-                    end
-    32'h0020_0000 : begin
-                        oMuxDiv     <=  oShift[22];
-                        oMuxMod     <=  oSub[22];
-                    end
-    32'h0040_0000 : begin
-                        oMuxDiv     <=  oShift[23];
-                        oMuxMod     <=  oSub[23];
-                    end
-    32'h0080_0000 : begin
-                        oMuxDiv     <=  oShift[24];
-                        oMuxMod     <=  oSub[24];
-                    end
-    32'h0100_0000 : begin
-                        oMuxDiv     <=  oShift[25];
-                        oMuxMod     <=  oSub[25];
-                    end
-    32'h0200_0000 : begin
-                        oMuxDiv     <=  oShift[26];
-                        oMuxMod     <=  oSub[26];
-                    end
-    32'h0400_0000 : begin
-                        oMuxDiv     <=  oShift[27];
-                        oMuxMod     <=  oSub[27];
-                    end
-    32'h0800_0000 : begin
-                        oMuxDiv     <=  oShift[28];
-                        oMuxMod     <=  oSub[28];
-                    end
-    32'h1000_0000 : begin
-                        oMuxDiv     <=  oShift[29];
-                        oMuxMod     <=  oSub[29];
-                    end
-    32'h2000_0000 : begin
-                        oMuxDiv     <=  oShift[30];
-                        oMuxMod     <=  oSub[30];
-                    end
-    32'h4000_0000 : begin
-                        oMuxDiv     <=  oShift[31];
-                        oMuxMod     <=  oSub[31];
-                    end
-    32'h8000_0000 : begin
-                        oMuxDiv     <=  oShift[1];
-                        oMuxMod     <=  oSub[1];
-                    end
-    default :       begin : NOP
-                    end
-    endcase
-end
+        32'h0001_FFFF : begin
+                        oMuxDiv     <=  rShift[17];
+                            oMuxMod     <=  rSub[17];
+                        end
+        32'h0003_FFFF : begin
+                            oMuxDiv     <=  rShift[18];
+                            oMuxMod     <=  rSub[18];
+                        end
+        32'h0007_FFFF : begin
+                            oMuxDiv     <=  rShift[19];
+                            oMuxMod     <=  rSub[19];
+                        end
+        32'h000F_FFFF : begin
+                            oMuxDiv     <=  rShift[20];
+                            oMuxMod     <=  rSub[20];
+                        end
+        32'h001F_FFFF : begin
+                            oMuxDiv     <=  rShift[21];
+                            oMuxMod     <=  rSub[21];
+                        end
+        32'h003F_FFFF : begin
+                            oMuxDiv     <=  rShift[22];
+                            oMuxMod     <=  rSub[22];
+                        end
+        32'h007F_FFFF : begin
+                            oMuxDiv     <=  rShift[23];
+                            oMuxMod     <=  rSub[23];
+                        end
+        32'h00FF_FFFF : begin
+                            oMuxDiv     <=  rShift[24];
+                            oMuxMod     <=  rSub[24];
+                        end
+        32'h01FF_FFFF : begin
+                            oMuxDiv     <=  rShift[25];
+                            oMuxMod     <=  rSub[25];
+                        end
+        32'h03FF_FFFF : begin
+                            oMuxDiv     <=  rShift[26];
+                            oMuxMod     <=  rSub[26];
+                        end
+        32'h07FF_FFFF : begin
+                            oMuxDiv     <=  rShift[27];
+                            oMuxMod     <=  rSub[27];
+                        end
+        32'h0FFF_FFFF : begin
+                            oMuxDiv     <=  rShift[28];
+                            oMuxMod     <=  rSub[28];
+                        end
+        32'h1FFF_FFFF : begin
+                            oMuxDiv     <=  rShift[29];
+                            oMuxMod     <=  rSub[29];
+                        end
+        32'h3FFF_FFFF : begin
+                            oMuxDiv     <=  rShift[30];
+                            oMuxMod     <=  rSub[30];
+                        end
+        32'h7FFF_FFFF : begin
+                            oMuxDiv     <=  rShift[31];
+                            oMuxMod     <=  rSub[31];
+                        end
+        32'hFFFF_FFFF : begin
+                            oMuxDiv     <=  rShift[1];
+                            oMuxMod     <=  rSub[1];
+                        end
+        default :       begin : NOP
+                        end
+        endcase
+    end
+
 
     assign      iCompA              =       oMuxDiv;
     assign      iCompB              =       oMuxMod;
