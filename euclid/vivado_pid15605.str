@@ -1,0 +1,1672 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:02:38 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 15605
+License: Customer
+
+Current time: 	Mon Nov 02 21:38:56 CST 2020
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Ubuntu
+OS Version: 4.20.2-042002-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 13 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	/mnt/disk3/Software/Xilinx/Vivado/2018.2/tps/lnx64/jre
+Java executable location: 	/mnt/disk3/Software/Xilinx/Vivado/2018.2/tps/lnx64/jre/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	ubuntu
+User home directory: /home/ubuntu
+User working directory: /home/ubuntu/work/ic/gcd/euclid
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /mnt/disk3/Software/Xilinx/Vivado
+HDI_APPROOT: /mnt/disk3/Software/Xilinx/Vivado/2018.2
+RDI_DATADIR: /mnt/disk3/Software/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: /mnt/disk3/Software/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: /home/ubuntu/.Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: /home/ubuntu/.Xilinx/Vivado/2018.2/
+Vivado layouts directory: /home/ubuntu/.Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	/mnt/disk3/Software/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/ubuntu/work/ic/gcd/euclid/vivado.log
+Vivado journal file location: 	/home/ubuntu/work/ic/gcd/euclid/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-15605-ubuntu
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /mnt/disk3/Software/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: /mnt/disk3/Software/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: /mnt/disk3/Software/Xilinx/Vivado/2018.2
+XILINX_SDK: /mnt/disk3/Software/Xilinx/SDK/2018.2
+XILINX_VIVADO: /mnt/disk3/Software/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: /mnt/disk3/Software/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	163 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 930 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 63 MB (+63265kb) [00:00:04]
+// [Engine Memory]: 840 MB (+729709kb) [00:00:04]
+// Opening Vivado Project: euclid.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project euclid.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project euclid.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [GUI Memory]: 73 MB (+8005kb) [00:00:07]
+// [Engine Memory]: 934 MB (+53854kb) [00:00:07]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/disk3/Software/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,016 MB (+37471kb) [00:00:08]
+// [GUI Memory]: 82 MB (+4751kb) [00:00:09]
+// [Engine Memory]: 1,082 MB (+15151kb) [00:00:10]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 42 MB. Current time: 11/2/20 9:39:00 PM CST
+// Project name: euclid; location: /home/ubuntu/work/ic/gcd/euclid; part: xc7z020clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 6197.328 ; gain = 167.922 ; free physical = 3767 ; free virtual = 15318 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, ck) - Node
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (ck): Elaborate Design: addNotify
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (ck)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7z020clg400-1 Top: gcd_test 
+// [Engine Memory]: 1,190 MB (+56673kb) [00:00:17]
+// TclEventType: ELABORATE_FINISH
+// [Engine Memory]: 1,271 MB (+22536kb) [00:00:22]
+// TclEventType: READ_XDC_FILE_START
+// [Engine Memory]: 1,540 MB (+216216kb) [00:00:37]
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,540 MB. GUI used memory: 41 MB. Current time: 11/2/20 9:39:26 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Xgd.load filename: /mnt/disk3/Software/Xilinx/Vivado/2018.2/data/parts/xilinx/zynq/devint/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_detail.xgd elapsed time: 0.6s
+// Schematic: addNotify
+// TclEventType: CURR_DESIGN_SET
+// [GUI Memory]: 91 MB (+5004kb) [00:00:39]
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 6281.188 ; gain = 55.836 ; free physical = 3663 ; free virtual = 15212 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'gcd_test' [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:23] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gcd_test' (1#1) [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 6316.438 ; gain = 91.086 ; free physical = 3679 ; free virtual = 15229 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 6316.438 ; gain = 91.086 ; free physical = 3678 ; free virtual = 15228 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 6316.438 ; gain = 91.086 ; free physical = 3678 ; free virtual = 15228 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg400-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-140] Inserted 32 IBUFs to IO ports without IO buffers. INFO: [Opt 31-141] Inserted 32 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 6682.543 ; gain = 457.191 ; free physical = 3335 ; free virtual = 14885 
+// Tcl Message: 8 Infos, 73 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 6682.543 ; gain = 457.191 ; free physical = 3335 ; free virtual = 14885 
+// 'dP' command handler elapsed time: 27 seconds
+// Elapsed time: 25 seconds
+dismissDialog("Open Elaborated Design"); // bx (ck)
+// [GUI Memory]: 97 MB (+2378kb) [00:00:51]
+// PAPropertyPanels.initPanels (oMuxMod_reg[31] (RTL_REG__BREG_1)) elapsed time: 0.2s
+// [GUI Memory]: 103 MB (+921kb) [00:01:05]
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 11, true); // u (O, ck) - Node
+// [GUI Memory]: 110 MB (+1298kb) [00:01:13]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 11, true); // u (O, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aE (Q, ck)
+// [GUI Memory]: 121 MB (+6130kb) [00:01:30]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gcd_test (gcd_test.v)]", 1, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gcd_test (gcd_test.v)]", 1, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("gcd_test.v", 386, 176); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 365, 204); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,609 MB. GUI used memory: 113 MB. Current time: 11/2/20 9:43:53 PM CST
+// Elapsed time: 217 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (cM, ck)
+selectCodeEditor("gcd_test.v", 181, 209); // ce (w, ck)
+// k (ck): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, ck)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_NO, "No"); // a (k)
+dismissDialog("Text Changed"); // k (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gcd_test (gcd_test.v)]", 1, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gcd_test (gcd_test.v)]", 1, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cM, ck)
+// bx (ck):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// [Engine Memory]: 1,644 MB (+28100kb) [00:05:19]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,646 MB. GUI used memory: 74 MB. Current time: 11/2/20 9:44:10 PM CST
+// Engine heap size: 1,654 MB. GUI used memory: 75 MB. Current time: 11/2/20 9:44:10 PM CST
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 6707.566 ; gain = 0.000 ; free physical = 3278 ; free virtual = 14825 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'gcd_test' [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:23] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gcd_test' (1#1) [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 6729.555 ; gain = 21.988 ; free physical = 3295 ; free virtual = 14843 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 6729.555 ; gain = 21.988 ; free physical = 3297 ; free virtual = 14845 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 6729.555 ; gain = 21.988 ; free physical = 3297 ; free virtual = 14845 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,677 MB. GUI used memory: 47 MB. Current time: 11/2/20 9:44:11 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 6795.840 ; gain = 88.273 ; free physical = 3292 ; free virtual = 14839 
+dismissDialog("Reloading"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Schematic: addNotify
+// Elapsed time: 16 seconds
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[gcd_test]", 0, true); // aW (O, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Nov  2 21:44:42 2020] Launched synth_1... Run output will be captured here: /home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[gcd_test, Leaf Cells (32)]", 2); // aW (O, ck)
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[gcd_test, Nets (33)]", 1); // aW (O, ck)
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[gcd_test, Nets (33)]", 1); // aW (O, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gcd_test.v", 1); // k (j, ck)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[gcd_test]", 0, true); // aW (O, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 539, 327, 1197, 632, false, false, false, true, false); // f (k, ck) - Popup Trigger
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gcd_test.v", 1); // k (j, ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 205ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 15 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (ck)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ; 0 ; 0 ; 0.0 ; 0 ; 0 ; Mon Nov 02 21:44:42 CST 2020 ; 00:00:44 ; Vivado Synthesis Defaults (Vivado Synthesis 2018) ; Vivado Synthesis Default Reports (Vivado Synthesis 2018) ; xc7z020clg400-1 ; ubuntu ; Vivado Synthesis Defaults", 0, (String) null, 10, true); // ax (O, ck) - Node
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.2s
+selectCodeEditor("gcd_test.v", 441, 461); // ce (w, ck)
+// [GUI Memory]: 130 MB (+3275kb) [00:06:53]
+// Elapsed time: 16 seconds
+selectCodeEditor("gcd_test.v", 86, 231); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 83, 232); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 83, 232, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("gcd_test.v", 197, 228); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 197, 228, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("gcd_test.v", 341, 473); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 341, 473, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("gcd_test.v", 206, 255); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 206, 255, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 18 seconds
+selectCodeEditor("gcd_test.v", 343, 214); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 343, 214, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("gcd_test.v", 406, 216); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 406, 216, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("gcd_test.v", 384, 248); // ce (w, ck)
+// Elapsed time: 190 seconds
+selectCodeEditor("gcd_test.v", 708, 217); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 45 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (cM, ck)
+// k (ck): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, ck)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_NO, "No"); // a (k)
+dismissDialog("Text Changed"); // k (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gcd_test (gcd_test.v)]", 1, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gcd_test (gcd_test.v)]", 1, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("gcd_test.v", 227, 142); // ce (w, ck)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cM, ck)
+// bx (ck):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 214ms to process. Increasing delay to 2000 ms.
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,722 MB. GUI used memory: 83 MB. Current time: 11/2/20 9:50:45 PM CST
+// Engine heap size: 1,722 MB. GUI used memory: 84 MB. Current time: 11/2/20 9:50:45 PM CST
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 6807.852 ; gain = 0.000 ; free physical = 3258 ; free virtual = 14808 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'gcd_test' [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:23] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gcd_test' (1#1) [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 6807.852 ; gain = 0.000 ; free physical = 3280 ; free virtual = 14830 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 6807.852 ; gain = 0.000 ; free physical = 3281 ; free virtual = 14831 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 6807.852 ; gain = 0.000 ; free physical = 3281 ; free virtual = 14831 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,744 MB. GUI used memory: 53 MB. Current time: 11/2/20 9:50:46 PM CST
+// [Engine Memory]: 1,744 MB (+18256kb) [00:11:56]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 6858.859 ; gain = 51.008 ; free physical = 3280 ; free virtual = 14830 
+dismissDialog("Reloading"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gcd_test.v", 2); // k (j, ck)
+selectCodeEditor("gcd_test.v", 591, 360); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 113 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cM, ck)
+// bx (ck):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,800 MB. GUI used memory: 58 MB. Current time: 11/2/20 9:52:48 PM CST
+// Engine heap size: 1,800 MB. GUI used memory: 59 MB. Current time: 11/2/20 9:52:48 PM CST
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 6882.875 ; gain = 0.000 ; free physical = 3234 ; free virtual = 14785 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'gcd_test' [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:23] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gcd_test' (1#1) [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 6882.875 ; gain = 0.000 ; free physical = 3252 ; free virtual = 14802 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 6882.875 ; gain = 0.000 ; free physical = 3254 ; free virtual = 14804 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 6882.875 ; gain = 0.000 ; free physical = 3254 ; free virtual = 14804 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,815 MB. GUI used memory: 54 MB. Current time: 11/2/20 9:52:49 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,839 MB (+8125kb) [00:14:00]
+// Schematic: addNotify
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 6921.891 ; gain = 39.016 ; free physical = 3253 ; free virtual = 14802 
+dismissDialog("Reloading"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gcd_test.v", 2); // k (j, ck)
+selectCodeEditor("gcd_test.v", 400, 214); // ce (w, ck)
+// k (ck): Text Changed: addNotify
+// Elapsed time: 93 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, ck)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_NO, "No"); // a (k)
+dismissDialog("Text Changed"); // k (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Nov  2 21:54:31 2020] Launched synth_1... Run output will be captured here: /home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 50 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 17, true); // u (O, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 17, true); // u (O, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 19, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// e (ck): Close Design: addNotify
+selectButton(PAResourceAtoD.ClosePlanner_YES, "Yes"); // a (e)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,812 MB. GUI used memory: 69 MB. Current time: 11/2/20 9:55:30 PM CST
+// Engine heap size: 1,812 MB. GUI used memory: 70 MB. Current time: 11/2/20 9:55:30 PM CST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// bx (ck):  Open Synthesized Design : addNotify
+// Tcl Message: close_design 
+dismissDialog("Close Design"); // e (ck)
+// TclEventType: READ_XDC_FILE_START
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,782 MB. GUI used memory: 55 MB. Current time: 11/2/20 9:55:31 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// 'dP' command handler elapsed time: 7 seconds
+dismissDialog("Open Synthesized Design"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 31, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// RouteApi::initDelayMediator elapsed time: 18.9s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// HMemoryUtils.trashcanNow. Engine heap size: 2,043 MB. GUI used memory: 84 MB. Current time: 11/2/20 9:55:53 PM CST
+// [Engine Memory]: 2,043 MB (+117744kb) [00:17:05]
+// Elapsed time: 100 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aE (Q, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gcd_test (gcd_test.v)]", 1, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gcd_test (gcd_test.v)]", 1, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("gcd_test.v", 493, 273); // ce (w, ck)
+// Elapsed time: 1104 seconds
+selectCodeEditor("gcd_test.v", 1004, 292); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 1004, 292); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 1004, 292); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 1004, 292); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 1004, 292); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 1004, 292); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 1004, 292); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 1004, 292); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 1004, 292); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 1004, 292); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 1004, 292); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 1004, 292); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 1004, 292); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 1004, 292); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 1004, 292); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 1004, 292); // ce (w, ck)
+selectCodeEditor("gcd_test.v", 1004, 292); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,054 MB. GUI used memory: 85 MB. Current time: 11/2/20 10:25:53 PM CST
+// [GUI Memory]: 137 MB (+607kb) [01:12:10]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,075 MB. GUI used memory: 84 MB. Current time: 11/2/20 10:54:39 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,104 MB. GUI used memory: 83 MB. Current time: 11/2/20 10:55:38 PM CST
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 2415 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (cM, ck)
+// k (ck): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, ck)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_NO, "No"); // a (k)
+dismissDialog("Text Changed"); // k (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// e (ck): Close Design: addNotify
+selectButton(PAResourceAtoD.ClosePlanner_YES, "Yes"); // a (e)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,104 MB. GUI used memory: 55 MB. Current time: 11/2/20 10:56:16 PM CST
+// Engine heap size: 2,104 MB. GUI used memory: 56 MB. Current time: 11/2/20 10:56:16 PM CST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// A (ck): Elaborate Design: addNotify
+// Tcl Message: close_design 
+dismissDialog("Close Design"); // e (ck)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (ck)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7z020clg400-1 Top: gcd_test 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 2,217 MB (+74774kb) [01:17:32]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,217 MB. GUI used memory: 53 MB. Current time: 11/2/20 10:56:21 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7182.211 ; gain = 0.000 ; free physical = 2744 ; free virtual = 14333 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'gcd_test' [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:23] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gcd_test' (1#1) [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7182.211 ; gain = 0.000 ; free physical = 2760 ; free virtual = 14349 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7182.211 ; gain = 0.000 ; free physical = 2763 ; free virtual = 14352 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7182.211 ; gain = 0.000 ; free physical = 2763 ; free virtual = 14352 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 7318.230 ; gain = 136.020 ; free physical = 2646 ; free virtual = 14235 
+// Tcl Message: 5 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// 'dP' command handler elapsed time: 8 seconds
+dismissDialog("Open Elaborated Design"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Nov  2 22:56:28 2020] Launched synth_1... Run output will be captured here: /home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 250ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 77 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN, "Open Synthesized Design"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// e (ck): Close Design: addNotify
+selectButton(PAResourceAtoD.ClosePlanner_YES, "Yes"); // a (e)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,237 MB. GUI used memory: 77 MB. Current time: 11/2/20 10:57:48 PM CST
+// Engine heap size: 2,237 MB. GUI used memory: 78 MB. Current time: 11/2/20 10:57:48 PM CST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// bx (ck):  Open Synthesized Design : addNotify
+// Tcl Message: close_design 
+dismissDialog("Close Design"); // e (ck)
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,213 MB. GUI used memory: 55 MB. Current time: 11/2/20 10:57:50 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 579 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// 'dP' command handler elapsed time: 4 seconds
+dismissDialog("Open Synthesized Design"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// aJ (ck): Report Timing Summary: addNotify
+setSpinner(PAResourceQtoS.ReportTimingSummaryDialog_GROUP, "100", true); // d (C, aJ)
+setSpinner(PAResourceQtoS.ReportTimingSummaryDialog_GROUP, "1000", true); // d (C, aJ)
+setSpinner(PAResourceQtoS.ReportTimingSummaryDialog_GROUP, "2000", true); // d (C, aJ)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aJ)
+// 'r' command handler elapsed time: 9 seconds
+dismissDialog("Report Timing Summary"); // aJ (ck)
+// TclEventType: TIMING_RESULTS_STALE
+// bx (ck):  Report Timing Summary : addNotify
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 2000 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs 
+// TclEventType: TIMING_SUMMARY_UPDATED
+dismissDialog("Report Timing Summary"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,320 MB. GUI used memory: 90 MB. Current time: 11/2/20 10:58:08 PM CST
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "-0.596 ns"); // h (Q, ck)
+// PAPropertyPanels.initPanels (Path 1) elapsed time: 0.5s
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; -0.59635544 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[10]/D ; 4.76 ; 1.8919998 ; 2.868 ; 4.3 ; clk ; clk ; ", 1, "rCompMax_reg[10]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.59635544 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.76 ; 1.8919998 ; 2.868 ; 4.3 ; clk ; clk ; ", 0, "rCompMax_reg[0]/D", 6); // i (O, ck)
+// Elapsed time: 52 seconds
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.59635544 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.76 ; 1.8919998 ; 2.868 ; 4.3 ; clk ; clk ; ", 0, "4.76", 7); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.59635544 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.76 ; 1.8919998 ; 2.868 ; 4.3 ; clk ; clk ; ", 0, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.59635544 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.76 ; 1.8919998 ; 2.868 ; 4.3 ; clk ; clk ; ", 0, "rCompMax_reg[0]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; -0.59635544 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[10]/D ; 4.76 ; 1.8919998 ; 2.868 ; 4.3 ; clk ; clk ; ", 1, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.59635544 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.76 ; 1.8919998 ; 2.868 ; 4.3 ; clk ; clk ; ", 0, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.59635544 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.76 ; 1.8919998 ; 2.868 ; 4.3 ; clk ; clk ; ", 0, "rCompMax_reg[0]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.59635544 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.76 ; 1.8919998 ; 2.868 ; 4.3 ; clk ; clk ; ", 0, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.59635544 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.76 ; 1.8919998 ; 2.868 ; 4.3 ; clk ; clk ; ", 0, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.59635544 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.76 ; 1.8919998 ; 2.868 ; 4.3 ; clk ; clk ; ", 0, "oMuxMod_reg[2]/C", 5, false, false, false, false, true); // i (O, ck) - Double Click
+closeView(PAResourceOtoP.PAViews_PATH_TABLE, "Path Table"); // j
+// Elapsed time: 53 seconds
+maximizeFrame(PAResourceOtoP.PAViews_TIMING, "Timing - Timing Summary - timing_1"); // aw (aE, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 74 ; 0.41664582 ; 4 ; 5 ; 10 ; rCompArr_reg[21]/C ; rMuxSel_reg[0]/D ; 3.7469993 ; 1.1450001 ; 2.602 ; 4.3 ; clk ; clk ; ", 73, "rCompArr_reg[21]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 68 ; -0.01835465 ; 3 ; 4 ; 9 ; rCompArr_reg[8]/C ; rMuxSel_reg[1]/CE ; 3.9359999 ; 1.021 ; 2.9149997 ; 4.3 ; clk ; clk ; ", 67, "rCompArr_reg[8]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 68 ; -0.01835465 ; 3 ; 4 ; 9 ; rCompArr_reg[8]/C ; rMuxSel_reg[1]/CE ; 3.9359999 ; 1.021 ; 2.9149997 ; 4.3 ; clk ; clk ; ", 67, "rMuxSel_reg[1]/CE", 6); // i (O, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 2,339 MB (+12463kb) [01:23:16]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,355 MB. GUI used memory: 93 MB. Current time: 11/2/20 11:02:43 PM CST
+// Elapsed time: 136 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Nov  2 23:02:45 2020] Launched synth_1... Run output will be captured here: /home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 289ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Completed: addNotify
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bx (ck):  Reloading design : addNotify
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,356 MB. GUI used memory: 85 MB. Current time: 11/2/20 11:03:53 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,356 MB. GUI used memory: 86 MB. Current time: 11/2/20 11:03:53 PM CST
+// TclEventType: CURR_DESIGN_SET
+// Elapsed time: 68 seconds
+unMaximizeFrame(PAResourceOtoP.PAViews_TIMING, "Timing - Timing Summary - timing_1"); // aw (aE, ck)
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,351 MB. GUI used memory: 58 MB. Current time: 11/2/20 11:03:55 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 454 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+dismissDialog("Reloading design"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Set Up Debug]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_DEBUG_WIZARD
+// N (ck): Set Up Debug: addNotify
+applyEscape(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, (String) null); // u (O, ck)
+applyEscape(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, (String) null); // u (O, ck)
+selectButton("CANCEL", "Cancel"); // JButton (j, N)
+dismissDialog("Set Up Debug"); // N (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// aJ (ck): Report Timing Summary: addNotify
+setSpinner(PAResourceQtoS.ReportTimingSummaryDialog_GROUP, "2000", true); // d (C, aJ)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aJ)
+// 'r' command handler elapsed time: 3 seconds
+dismissDialog("Report Timing Summary"); // aJ (ck)
+// TclEventType: TIMING_RESULTS_STALE
+// bx (ck):  Report Timing Summary : addNotify
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 2000 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs 
+// TclEventType: TIMING_SUMMARY_UPDATED
+dismissDialog("Report Timing Summary"); // bx (ck)
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "-2.042 ns"); // h (Q, ck)
+// PAPropertyPanels.initPanels (Path 1) elapsed time: 0.3s
+maximizeFrame(PAResourceOtoP.PAViews_TIMING, "Timing - Timing Summary - timing_1"); // aw (aE, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 4 ; -2.042355 ; 7 ; 8 ; 180 ; rCompMax_reg[9]/C ; oMuxDiv_reg[12]/CE ; 5.9600005 ; 1.9789999 ; 3.981 ; 4.3 ; clk ; clk ; ", 3, "rCompMax_reg[9]/C", 5); // i (O, ck)
+// Elapsed time: 17 seconds
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 59 ; -2.042355 ; 7 ; 8 ; 180 ; rCompMax_reg[9]/C ; oMuxMod_reg[4]/CE ; 5.9600005 ; 1.9789999 ; 3.981 ; 4.3 ; clk ; clk ; ", 58, "rCompMax_reg[9]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 59 ; -2.042355 ; 7 ; 8 ; 180 ; rCompMax_reg[9]/C ; oMuxMod_reg[4]/CE ; 5.9600005 ; 1.9789999 ; 3.981 ; 4.3 ; clk ; clk ; ", 58, "oMuxMod_reg[4]/CE", 6); // i (O, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 144 MB (+24kb) [01:28:39]
+// [GUI Memory]: 152 MB (+367kb) [01:29:00]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,386 MB. GUI used memory: 94 MB. Current time: 11/2/20 11:08:43 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 295 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bx)
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Nov  2 23:09:30 2020] Launched synth_1... Run output will be captured here: /home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,418 MB. GUI used memory: 93 MB. Current time: 11/2/20 11:10:18 PM CST
+// Elapsed time: 59 seconds
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 140 ; -0.6203549 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[20]/D ; 4.784 ; 1.9159998 ; 2.868 ; 4.3 ; clk ; clk ; ", 139, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 140 ; -0.6203549 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[20]/D ; 4.784 ; 1.9159998 ; 2.868 ; 4.3 ; clk ; clk ; ", 139, "rCompMax_reg[20]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 140 ; -0.6203549 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[20]/D ; 4.784 ; 1.9159998 ; 2.868 ; 4.3 ; clk ; clk ; ", 139, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 267ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Completed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bx (ck):  Reloading design : addNotify
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,423 MB. GUI used memory: 86 MB. Current time: 11/2/20 11:10:40 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,423 MB. GUI used memory: 87 MB. Current time: 11/2/20 11:10:40 PM CST
+// TclEventType: CURR_DESIGN_SET
+unMaximizeFrame(PAResourceOtoP.PAViews_TIMING, "Timing - Timing Summary - timing_1"); // aw (aE, ck)
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,419 MB. GUI used memory: 60 MB. Current time: 11/2/20 11:10:42 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 454 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+dismissDialog("Reloading design"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// aJ (ck): Report Timing Summary: addNotify
+setSpinner(PAResourceQtoS.ReportTimingSummaryDialog_GROUP, "2000", true); // d (C, aJ)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aJ)
+// 'r' command handler elapsed time: 3 seconds
+dismissDialog("Report Timing Summary"); // aJ (ck)
+// TclEventType: TIMING_RESULTS_STALE
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 2000 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs 
+// bx (ck):  Report Timing Summary : addNotify
+// TclEventType: TIMING_SUMMARY_UPDATED
+dismissDialog("Report Timing Summary"); // bx (ck)
+maximizeFrame(PAResourceOtoP.PAViews_TIMING, "Timing - Timing Summary - timing_1"); // aw (aE, ck)
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "-2.116 ns"); // h (Q, ck)
+// PAPropertyPanels.initPanels (Path 1) elapsed time: 0.3s
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -2.116356 ; 9 ; 10 ; 128 ; rCompMax_reg[1]/C ; oMuxDiv_reg[23]/D ; 6.2800016 ; 2.2219996 ; 4.058 ; 4.3 ; clk ; clk ; ", 0, "rCompMax_reg[1]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -2.116356 ; 9 ; 10 ; 128 ; rCompMax_reg[1]/C ; oMuxDiv_reg[23]/D ; 6.2800016 ; 2.2219996 ; 4.058 ; 4.3 ; clk ; clk ; ", 0, "oMuxDiv_reg[23]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -2.116356 ; 9 ; 10 ; 128 ; rCompMax_reg[1]/C ; oMuxDiv_reg[23]/D ; 6.2800016 ; 2.2219996 ; 4.058 ; 4.3 ; clk ; clk ; ", 0, "rCompMax_reg[1]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -2.116356 ; 9 ; 10 ; 128 ; rCompMax_reg[1]/C ; oMuxDiv_reg[23]/D ; 6.2800016 ; 2.2219996 ; 4.058 ; 4.3 ; clk ; clk ; ", 0, "oMuxDiv_reg[23]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -2.116356 ; 9 ; 10 ; 128 ; rCompMax_reg[1]/C ; oMuxDiv_reg[23]/D ; 6.2800016 ; 2.2219996 ; 4.058 ; 4.3 ; clk ; clk ; ", 0, "rCompMax_reg[1]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -2.116356 ; 9 ; 10 ; 128 ; rCompMax_reg[1]/C ; oMuxDiv_reg[23]/D ; 6.2800016 ; 2.2219996 ; 4.058 ; 4.3 ; clk ; clk ; ", 0, "oMuxDiv_reg[23]/D", 6); // i (O, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 83 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Nov  2 23:12:31 2020] Launched synth_1... Run output will be captured here: /home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 250ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Completed: addNotify
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bx (ck):  Reloading design : addNotify
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,441 MB. GUI used memory: 87 MB. Current time: 11/2/20 11:13:29 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,441 MB. GUI used memory: 88 MB. Current time: 11/2/20 11:13:29 PM CST
+// TclEventType: CURR_DESIGN_SET
+// Elapsed time: 58 seconds
+unMaximizeFrame(PAResourceOtoP.PAViews_TIMING, "Timing - Timing Summary - timing_1"); // aw (aE, ck)
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,436 MB. GUI used memory: 61 MB. Current time: 11/2/20 11:13:31 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 454 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+dismissDialog("Reloading design"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// aJ (ck): Report Timing Summary: addNotify
+applyEnter(PAResourceTtoZ.TimingDialogUtils_RESULTS_NAME, "timing_1"); // X (C, aJ)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aJ)
+dismissDialog("Report Timing Summary"); // aJ (ck)
+// TclEventType: TIMING_RESULTS_STALE
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs 
+// TclEventType: TIMING_SUMMARY_UPDATED
+// bx (ck):  Report Timing Summary : addNotify
+dismissDialog("Report Timing Summary"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// aJ (ck): Report Timing Summary: addNotify
+setSpinner(PAResourceQtoS.ReportTimingSummaryDialog_GROUP, "2000"); // d (C, aJ)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aJ)
+// 'r' command handler elapsed time: 4 seconds
+dismissDialog("Report Timing Summary"); // aJ (ck)
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 2000 -input_pins -routable_nets -name timing_2 
+// Tcl Message: INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs 
+// bx (ck):  Report Timing Summary : addNotify
+// TclEventType: TIMING_SUMMARY_UPDATED
+dismissDialog("Report Timing Summary"); // bx (ck)
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "-0.596 ns"); // h (Q, ck)
+// PAPropertyPanels.initPanels (Path 1) elapsed time: 0.3s
+maximizeFrame(PAResourceOtoP.PAViews_TIMING, "Timing - Timing Summary - timing_2"); // aw (aE, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,438 MB. GUI used memory: 103 MB. Current time: 11/2/20 11:13:48 PM CST
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.59635544 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.76 ; 1.8919998 ; 2.868 ; 4.3 ; clk ; clk ; ", 0, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.59635544 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.76 ; 1.8919998 ; 2.868 ; 4.3 ; clk ; clk ; ", 0, "rCompMax_reg[0]/D", 6); // i (O, ck)
+// Elapsed time: 11 seconds
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.59635544 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.76 ; 1.8919998 ; 2.868 ; 4.3 ; clk ; clk ; ", 0, "rCompMax_reg[0]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.59635544 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.76 ; 1.8919998 ; 2.868 ; 4.3 ; clk ; clk ; ", 0, "rCompMax_reg[0]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; -0.59635544 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[10]/D ; 4.76 ; 1.8919998 ; 2.868 ; 4.3 ; clk ; clk ; ", 1, "rCompMax_reg[10]/D", 6); // i (O, ck)
+// Elapsed time: 51 seconds
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 67 ; 0.044645622 ; 4 ; 5 ; 1 ; rSub_reg[17][28]/C ; oMuxMod_reg[28]/D ; 4.1189995 ; 1.1450001 ; 2.9739997 ; 4.3 ; clk ; clk ; ", 66, "4.1189995", 7); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 66 ; -0.023354651 ; 4 ; 5 ; 28 ; rShift2_reg[26][31]/C ; oMuxDiv_reg[22]/D ; 4.1870003 ; 1.1450001 ; 3.042 ; 4.3 ; clk ; clk ; ", 65, "rShift2_reg[26][31]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 65 ; -0.21835467 ; 4 ; 5 ; 96 ; rCompArr_reg[16]/C ; oMuxMod_reg[19]/D ; 4.3819995 ; 1.1450001 ; 3.237 ; 4.3 ; clk ; clk ; ", 64, "rCompArr_reg[16]/C", 5); // i (O, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 341 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Nov  2 23:20:42 2020] Launched synth_1... Run output will be captured here: /home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 235ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 58 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bx (ck):  Reloading design : addNotify
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,459 MB. GUI used memory: 93 MB. Current time: 11/2/20 11:21:42 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// [Engine Memory]: 2,459 MB (+3005kb) [01:42:52]
+// Engine heap size: 2,459 MB. GUI used memory: 94 MB. Current time: 11/2/20 11:21:42 PM CST
+// TclEventType: CURR_DESIGN_SET
+unMaximizeFrame(PAResourceOtoP.PAViews_TIMING, "Timing - Timing Summary - timing_2"); // aw (aE, ck)
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,446 MB. GUI used memory: 63 MB. Current time: 11/2/20 11:21:44 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 454 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+dismissDialog("Reloading design"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// aJ (ck): Report Timing Summary: addNotify
+setSpinner(PAResourceQtoS.ReportTimingSummaryDialog_GROUP, "2000", true); // d (C, aJ)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aJ)
+// 'r' command handler elapsed time: 3 seconds
+dismissDialog("Report Timing Summary"); // aJ (ck)
+applyEnter(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, (String) null); // u (O, ck)
+// TclEventType: TIMING_RESULTS_STALE
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 2000 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs 
+// bx (ck):  Report Timing Summary : addNotify
+// TclEventType: TIMING_SUMMARY_UPDATED
+dismissDialog("Report Timing Summary"); // bx (ck)
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "-0.596 ns"); // h (Q, ck)
+// PAPropertyPanels.initPanels (Path 1) elapsed time: 0.2s
+maximizeFrame(PAResourceOtoP.PAViews_TIMING, "Timing - Timing Summary - timing_1"); // aw (aE, ck)
+// Elapsed time: 25 seconds
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.59635544 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.76 ; 1.8919998 ; 2.868 ; 4.3 ; clk ; clk ; ", 0, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.59635544 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.76 ; 1.8919998 ; 2.868 ; 4.3 ; clk ; clk ; ", 0, "oMuxMod_reg[2]/C", 5, false, false, false, false, true); // i (O, ck) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 2,451 MB. GUI used memory: 118 MB. Current time: 11/2/20 11:22:28 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,451 MB. GUI used memory: 123 MB. Current time: 11/2/20 11:22:33 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,451 MB. GUI used memory: 117 MB. Current time: 11/2/20 11:22:34 PM CST
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "FDRE ;  ;  ;  ; oMuxMod_reg[2]/C", 9, "oMuxMod_reg[2]/C", 4); // C (p, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,451 MB. GUI used memory: 121 MB. Current time: 11/2/20 11:22:35 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,451 MB. GUI used memory: 124 MB. Current time: 11/2/20 11:22:37 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,451 MB. GUI used memory: 118 MB. Current time: 11/2/20 11:22:38 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,451 MB. GUI used memory: 118 MB. Current time: 11/2/20 11:22:39 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,451 MB. GUI used memory: 124 MB. Current time: 11/2/20 11:22:41 PM CST
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "FDRE (Prop_fdre_C_Q) ; (f) 0.478 ; 2.934 ;  ; oMuxMod_reg[2]/Q", 0, "oMuxMod_reg[2]/Q", 4); // C (p, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,451 MB. GUI used memory: 118 MB. Current time: 11/2/20 11:22:41 PM CST
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "FDRE (Prop_fdre_C_Q) ; (f) 0.478 ; 2.934 ;  ; oMuxMod_reg[2]/Q", 0, "oMuxMod_reg[2]/Q", 4); // C (p, ck)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=4, unplaced) ; 0.765 ; 3.699 ;  ; oMuxMod_reg_n_0_[2]", 1, "oMuxMod_reg_n_0_[2]", 4); // C (p, ck)
+// [GUI Memory]: 159 MB (+46kb) [01:43:55]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,451 MB. GUI used memory: 130 MB. Current time: 11/2/20 11:22:45 PM CST
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, " ;  ;  ;  ; rCompMin[31]_i_64/I1", 2, "rCompMin[31]_i_64/I1", 4); // C (p, ck)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "LUT4 (Prop_lut4_I1_O) ; (r) 0.295 ; 3.994 ;  ; rCompMin[31]_i_64/O", 3, "rCompMin[31]_i_64/O", 4); // C (p, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,451 MB. GUI used memory: 118 MB. Current time: 11/2/20 11:22:46 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,452 MB. GUI used memory: 121 MB. Current time: 11/2/20 11:22:46 PM CST
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=1, unplaced) ; 0.449 ; 4.443 ;  ; rCompMin[31]_i_64_n_0", 4, "rCompMin[31]_i_64_n_0", 4); // C (p, ck)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, " ;  ;  ;  ; rCompMin[31]_i_48/I5", 5, "rCompMin[31]_i_48/I5", 4); // C (p, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,452 MB. GUI used memory: 125 MB. Current time: 11/2/20 11:22:50 PM CST
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "LUT6 (Prop_lut6_I5_O) ; (r) 0.124 ; 4.567 ;  ; rCompMin[31]_i_48/O", 6, "rCompMin[31]_i_48/O", 4); // C (p, ck)
+// [GUI Memory]: 168 MB (+446kb) [01:44:02]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,452 MB. GUI used memory: 128 MB. Current time: 11/2/20 11:22:52 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,452 MB. GUI used memory: 118 MB. Current time: 11/2/20 11:22:52 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,452 MB. GUI used memory: 130 MB. Current time: 11/2/20 11:23:40 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,452 MB. GUI used memory: 118 MB. Current time: 11/2/20 11:23:41 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,452 MB. GUI used memory: 118 MB. Current time: 11/2/20 11:23:42 PM CST
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,468 MB. GUI used memory: 110 MB. Current time: 11/2/20 11:23:43 PM CST
+// Elapsed time: 54 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Nov  2 23:23:45 2020] Launched synth_1... Run output will be captured here: /home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,468 MB. GUI used memory: 125 MB. Current time: 11/2/20 11:23:55 PM CST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Edit Timing Constraints]", 21, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WINDOW
+selectTableHeader(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "Period (ns)", 2); // f (O, ck)
+selectTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "1 ; clk ; 4.3 ; 0.0 ; 2.15 ; false ; [get_ports clk] ; /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc ;  ; ", 0, "4.3", 2); // f (O, ck)
+editTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "5.0", 0, "Period (ns)", 2); // f (O, ck)
+selectButton(PAResourceTtoZ.XdcEditorView_APPLY_ALL_CHANGES_TO_XDC_CONSTRAINTS, "Apply"); // a (a, ck)
+// bx (ck):  Apply All XDC Constraints : addNotify
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: SDC_CONSTR_MGR_CLEAR
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+dismissDialog("Apply All XDC Constraints"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// A (ck): Out of Date Design: addNotify
+dismissDialog("Save Project"); // aj (ck)
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Save Constraints : addNotify
+dismissDialog("Out of Date Design"); // A (ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// Tcl Message: save_constraints -force 
+// bx (ck):  Resetting Runs : addNotify
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Save Constraints"); // bx (ck)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Nov  2 23:24:08 2020] Launched synth_1... Run output will be captured here: /home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 238ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 74 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bx (ck):  Reloading design : addNotify
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,485 MB. GUI used memory: 101 MB. Current time: 11/2/20 11:25:23 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,485 MB. GUI used memory: 102 MB. Current time: 11/2/20 11:25:23 PM CST
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,480 MB. GUI used memory: 69 MB. Current time: 11/2/20 11:25:25 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 454 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+dismissDialog("Reloading design"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// aJ (ck): Report Timing Summary: addNotify
+setSpinner(PAResourceQtoS.ReportTimingSummaryDialog_GROUP, "2000", true); // d (C, aJ)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aJ)
+// 'r' command handler elapsed time: 3 seconds
+dismissDialog("Report Timing Summary"); // aJ (ck)
+// TclEventType: TIMING_RESULTS_STALE
+// bx (ck):  Report Timing Summary : addNotify
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 2000 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs 
+// TclEventType: TIMING_SUMMARY_UPDATED
+dismissDialog("Report Timing Summary"); // bx (ck)
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "0.080 ns"); // h (Q, ck)
+// PAPropertyPanels.initPanels (Path 1) elapsed time: 0.3s
+maximizeFrame(PAResourceOtoP.PAViews_TIMING, "Timing - Timing Summary - timing_1"); // aw (aE, ck)
+// Device view-level: 0.0
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,496 MB. GUI used memory: 105 MB. Current time: 11/2/20 11:34:53 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,528 MB. GUI used memory: 105 MB. Current time: 11/2/20 11:35:58 PM CST
+// Elapsed time: 619 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Device view-level: 0.0
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Nov  2 23:36:00 2020] Launched synth_1... Run output will be captured here: /home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 284ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Completed: addNotify
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bx (ck):  Reloading design : addNotify
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,538 MB. GUI used memory: 96 MB. Current time: 11/2/20 11:36:54 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,538 MB. GUI used memory: 96 MB. Current time: 11/2/20 11:36:54 PM CST
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,533 MB. GUI used memory: 71 MB. Current time: 11/2/20 11:36:56 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 206 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Device view-level: 0.0
+// Elapsed time: 57 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+dismissDialog("Reloading design"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// aJ (ck): Report Timing Summary: addNotify
+setSpinner(PAResourceQtoS.ReportTimingSummaryDialog_GROUP, "2000", true); // d (C, aJ)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aJ)
+// 'r' command handler elapsed time: 3 seconds
+dismissDialog("Report Timing Summary"); // aJ (ck)
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 2000 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs 
+// bx (ck):  Report Timing Summary : addNotify
+dismissDialog("Report Timing Summary"); // bx (ck)
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "1.100 ns"); // h (Q, ck)
+// PAPropertyPanels.initPanels (Path 1) elapsed time: 0.2s
+// Elapsed time: 85 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ck)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ; 632 ; 161 ; 0.0 ; 0 ; 0 ; Mon Nov 02 23:36:00 CST 2020 ; 00:00:49 ; Vivado Synthesis Defaults (Vivado Synthesis 2018) ; Vivado Synthesis Default Reports (Vivado Synthesis 2018) ; xc7z020clg400-1 ; ubuntu ; Vivado Synthesis Defaults", 0, (String) null, 10, true); // ax (O, ck) - Node
+// [GUI Memory]: 179 MB (+2365kb) [01:59:55]
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // u (O, ck)
+// A (ck): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+dismissDialog("Elaborate Design"); // A (ck)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7z020clg400-1 Top: gcd_test 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,718 MB. GUI used memory: 111 MB. Current time: 11/2/20 11:38:58 PM CST
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 2,718 MB (+142842kb) [02:00:09]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,718 MB. GUI used memory: 109 MB. Current time: 11/2/20 11:38:59 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.2s
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7597.902 ; gain = 0.000 ; free physical = 2456 ; free virtual = 14104 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'gcd_test' [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:23] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gcd_test' (1#1) [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7607.898 ; gain = 9.996 ; free physical = 2471 ; free virtual = 14118 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7607.898 ; gain = 9.996 ; free physical = 2473 ; free virtual = 14121 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7607.898 ; gain = 9.996 ; free physical = 2473 ; free virtual = 14121 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 7801.977 ; gain = 204.074 ; free physical = 2358 ; free virtual = 14006 
+// Tcl Message: 5 Infos, 97 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+dismissDialog("Open Elaborated Design"); // bx (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 174 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cM, ck)
+// bx (ck):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7801.980 ; gain = 0.000 ; free physical = 2308 ; free virtual = 13960 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,745 MB. GUI used memory: 119 MB. Current time: 11/2/20 11:41:59 PM CST
+// Engine heap size: 2,745 MB. GUI used memory: 120 MB. Current time: 11/2/20 11:41:59 PM CST
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'gcd_test' [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:23] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gcd_test' (1#1) [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7801.980 ; gain = 0.000 ; free physical = 2330 ; free virtual = 13978 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7801.980 ; gain = 0.000 ; free physical = 2330 ; free virtual = 13978 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7801.980 ; gain = 0.000 ; free physical = 2330 ; free virtual = 13978 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,810 MB. GUI used memory: 112 MB. Current time: 11/2/20 11:42:00 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// Schematic: addNotify
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 7890.988 ; gain = 89.008 ; free physical = 2329 ; free virtual = 13977 
+dismissDialog("Reloading"); // bx (ck)
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bx)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Nov  2 23:42:24 2020] Launched synth_1... Run output will be captured here: /home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// Elapsed time: 15 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 17 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cM, ck)
+// bx (ck):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7890.988 ; gain = 0.000 ; free physical = 2328 ; free virtual = 13976 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,826 MB. GUI used memory: 117 MB. Current time: 11/2/20 11:43:03 PM CST
+// Engine heap size: 2,826 MB. GUI used memory: 118 MB. Current time: 11/2/20 11:43:04 PM CST
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'gcd_test' [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:23] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gcd_test' (1#1) [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7890.988 ; gain = 0.000 ; free physical = 2344 ; free virtual = 13991 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7890.988 ; gain = 0.000 ; free physical = 2347 ; free virtual = 13995 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7890.988 ; gain = 0.000 ; free physical = 2347 ; free virtual = 13995 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,847 MB. GUI used memory: 111 MB. Current time: 11/2/20 11:43:05 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 2,871 MB (+17750kb) [02:04:16]
+// Schematic: addNotify
+// Schematic: addNotify
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 7927.996 ; gain = 37.008 ; free physical = 2343 ; free virtual = 13991 
+dismissDialog("Reloading"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Nov  2 23:43:14 2020] Launched synth_1... Run output will be captured here: /home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 246ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 52 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bx (ck):  Reloading design : addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: current_design synth_1 
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,872 MB. GUI used memory: 111 MB. Current time: 11/2/20 11:44:08 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,872 MB. GUI used memory: 111 MB. Current time: 11/2/20 11:44:09 PM CST
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,848 MB. GUI used memory: 106 MB. Current time: 11/2/20 11:44:10 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 206 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Device view-level: 0.0
+dismissDialog("Reloading design"); // bx (ck)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cM, ck)
+// bx (ck):  Reloading : addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: current_design rtl_1 
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7927.996 ; gain = 0.000 ; free physical = 2315 ; free virtual = 13964 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,832 MB. GUI used memory: 109 MB. Current time: 11/2/20 11:44:31 PM CST
+// Engine heap size: 2,832 MB. GUI used memory: 111 MB. Current time: 11/2/20 11:44:31 PM CST
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'gcd_test' [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:23] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gcd_test' (1#1) [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7927.996 ; gain = 0.000 ; free physical = 2329 ; free virtual = 13978 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7927.996 ; gain = 0.000 ; free physical = 2332 ; free virtual = 13981 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7927.996 ; gain = 0.000 ; free physical = 2332 ; free virtual = 13981 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,827 MB. GUI used memory: 105 MB. Current time: 11/2/20 11:44:32 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// Schematic: addNotify
+// Schematic: addNotify
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 7927.996 ; gain = 0.000 ; free physical = 2320 ; free virtual = 13969 
+dismissDialog("Reloading"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Nov  2 23:44:41 2020] Launched synth_1... Run output will be captured here: /home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// Elapsed time: 56 seconds
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 217ms to process. Increasing delay to 2000 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bx (ck):  Reloading design : addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: current_design synth_1 
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,852 MB. GUI used memory: 109 MB. Current time: 11/2/20 11:45:42 PM CST
+// Engine heap size: 2,852 MB. GUI used memory: 110 MB. Current time: 11/2/20 11:45:42 PM CST
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,852 MB. GUI used memory: 105 MB. Current time: 11/2/20 11:45:44 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 454 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+dismissDialog("Reloading design"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// aJ (ck): Report Timing Summary: addNotify
+setSpinner(PAResourceQtoS.ReportTimingSummaryDialog_GROUP, "2000", true); // d (C, aJ)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aJ)
+// 'r' command handler elapsed time: 6 seconds
+dismissDialog("Report Timing Summary"); // aJ (ck)
+// TclEventType: TIMING_RESULTS_STALE
+// bx (ck):  Report Timing Summary : addNotify
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 2000 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs 
+// TclEventType: TIMING_SUMMARY_UPDATED
+dismissDialog("Report Timing Summary"); // bx (ck)
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "0.045 ns"); // h (Q, ck)
+// PAPropertyPanels.initPanels (Path 1) elapsed time: 0.3s
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; 0.076644465 ; 5 ; 6 ; 84 ; rCompArr_reg[19]/C ; oMuxDiv_reg[22]/D ; 4.787 ; 1.2690002 ; 3.5179996 ; 5.0 ; clk ; clk ; ", 1, "4.787", 7); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; 0.044644732 ; 5 ; 6 ; 46 ; rCompArr_reg[20]/C ; oMuxDiv_reg[29]/D ; 4.8189993 ; 1.2690002 ; 3.55 ; 5.0 ; clk ; clk ; ", 0, "4.8189993", 7); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; 0.076644465 ; 5 ; 6 ; 84 ; rCompArr_reg[19]/C ; oMuxDiv_reg[22]/D ; 4.787 ; 1.2690002 ; 3.5179996 ; 5.0 ; clk ; clk ; ", 1, "4.787", 7); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; 0.044644732 ; 5 ; 6 ; 46 ; rCompArr_reg[20]/C ; oMuxDiv_reg[29]/D ; 4.8189993 ; 1.2690002 ; 3.55 ; 5.0 ; clk ; clk ; ", 0, "4.8189993", 7); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; 0.076644465 ; 5 ; 6 ; 84 ; rCompArr_reg[19]/C ; oMuxDiv_reg[22]/D ; 4.787 ; 1.2690002 ; 3.5179996 ; 5.0 ; clk ; clk ; ", 1, "4.787", 7); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; 0.044644732 ; 5 ; 6 ; 46 ; rCompArr_reg[20]/C ; oMuxDiv_reg[29]/D ; 4.8189993 ; 1.2690002 ; 3.55 ; 5.0 ; clk ; clk ; ", 0, "46", 4); // i (O, ck)
+maximizeFrame(PAResourceOtoP.PAViews_TIMING, "Timing - Timing Summary - timing_1"); // aw (aE, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 10 ; 0.07964429 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[16]/D ; 4.784 ; 1.9159998 ; 2.868 ; 5.0 ; clk ; clk ; ", 9, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; 0.076644465 ; 5 ; 6 ; 84 ; rCompArr_reg[19]/C ; oMuxDiv_reg[22]/D ; 4.787 ; 1.2690002 ; 3.5179996 ; 5.0 ; clk ; clk ; ", 1, "rCompArr_reg[19]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; 0.076644465 ; 5 ; 6 ; 84 ; rCompArr_reg[19]/C ; oMuxDiv_reg[22]/D ; 4.787 ; 1.2690002 ; 3.5179996 ; 5.0 ; clk ; clk ; ", 1, "oMuxDiv_reg[22]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; 0.076644465 ; 5 ; 6 ; 84 ; rCompArr_reg[19]/C ; oMuxDiv_reg[22]/D ; 4.787 ; 1.2690002 ; 3.5179996 ; 5.0 ; clk ; clk ; ", 1, "rCompArr_reg[19]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; 0.076644465 ; 5 ; 6 ; 84 ; rCompArr_reg[19]/C ; oMuxDiv_reg[22]/D ; 4.787 ; 1.2690002 ; 3.5179996 ; 5.0 ; clk ; clk ; ", 1, "rCompArr_reg[19]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; 0.076644465 ; 5 ; 6 ; 84 ; rCompArr_reg[19]/C ; oMuxDiv_reg[22]/D ; 4.787 ; 1.2690002 ; 3.5179996 ; 5.0 ; clk ; clk ; ", 1, "oMuxDiv_reg[22]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; 0.076644465 ; 5 ; 6 ; 84 ; rCompArr_reg[19]/C ; oMuxDiv_reg[22]/D ; 4.787 ; 1.2690002 ; 3.5179996 ; 5.0 ; clk ; clk ; ", 1, "rCompArr_reg[19]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; 0.076644465 ; 5 ; 6 ; 84 ; rCompArr_reg[19]/C ; oMuxDiv_reg[22]/D ; 4.787 ; 1.2690002 ; 3.5179996 ; 5.0 ; clk ; clk ; ", 1, "oMuxDiv_reg[22]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 4 ; 0.07964429 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[10]/D ; 4.784 ; 1.9159998 ; 2.868 ; 5.0 ; clk ; clk ; ", 3, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 4 ; 0.07964429 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[10]/D ; 4.784 ; 1.9159998 ; 2.868 ; 5.0 ; clk ; clk ; ", 3, "rCompMax_reg[10]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 4 ; 0.07964429 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[10]/D ; 4.784 ; 1.9159998 ; 2.868 ; 5.0 ; clk ; clk ; ", 3, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 4 ; 0.07964429 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[10]/D ; 4.784 ; 1.9159998 ; 2.868 ; 5.0 ; clk ; clk ; ", 3, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 4 ; 0.07964429 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[10]/D ; 4.784 ; 1.9159998 ; 2.868 ; 5.0 ; clk ; clk ; ", 3, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 4 ; 0.07964429 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[10]/D ; 4.784 ; 1.9159998 ; 2.868 ; 5.0 ; clk ; clk ; ", 3, "rCompMax_reg[10]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 3 ; 0.07964429 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.784 ; 1.9159998 ; 2.868 ; 5.0 ; clk ; clk ; ", 2, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; 0.076644465 ; 5 ; 6 ; 84 ; rCompArr_reg[19]/C ; oMuxDiv_reg[22]/D ; 4.787 ; 1.2690002 ; 3.5179996 ; 5.0 ; clk ; clk ; ", 1, "rCompArr_reg[19]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; 0.076644465 ; 5 ; 6 ; 84 ; rCompArr_reg[19]/C ; oMuxDiv_reg[22]/D ; 4.787 ; 1.2690002 ; 3.5179996 ; 5.0 ; clk ; clk ; ", 1, "rCompArr_reg[19]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; 0.076644465 ; 5 ; 6 ; 84 ; rCompArr_reg[19]/C ; oMuxDiv_reg[22]/D ; 4.787 ; 1.2690002 ; 3.5179996 ; 5.0 ; clk ; clk ; ", 1, "oMuxDiv_reg[22]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; 0.076644465 ; 5 ; 6 ; 84 ; rCompArr_reg[19]/C ; oMuxDiv_reg[22]/D ; 4.787 ; 1.2690002 ; 3.5179996 ; 5.0 ; clk ; clk ; ", 1, "rCompArr_reg[19]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; 0.076644465 ; 5 ; 6 ; 84 ; rCompArr_reg[19]/C ; oMuxDiv_reg[22]/D ; 4.787 ; 1.2690002 ; 3.5179996 ; 5.0 ; clk ; clk ; ", 1, "oMuxDiv_reg[22]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 3 ; 0.07964429 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.784 ; 1.9159998 ; 2.868 ; 5.0 ; clk ; clk ; ", 2, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 3 ; 0.07964429 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.784 ; 1.9159998 ; 2.868 ; 5.0 ; clk ; clk ; ", 2, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 3 ; 0.07964429 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.784 ; 1.9159998 ; 2.868 ; 5.0 ; clk ; clk ; ", 2, "rCompMax_reg[0]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 3 ; 0.07964429 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.784 ; 1.9159998 ; 2.868 ; 5.0 ; clk ; clk ; ", 2, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 3 ; 0.07964429 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.784 ; 1.9159998 ; 2.868 ; 5.0 ; clk ; clk ; ", 2, "rCompMax_reg[0]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 3 ; 0.07964429 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.784 ; 1.9159998 ; 2.868 ; 5.0 ; clk ; clk ; ", 2, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 70 ; 0.122645006 ; 5 ; 6 ; 43 ; rCompArr_reg[25]/C ; oMuxMod_reg[10]/D ; 4.7409997 ; 1.2690002 ; 3.472 ; 5.0 ; clk ; clk ; ", 69, "rCompArr_reg[25]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 70 ; 0.122645006 ; 5 ; 6 ; 43 ; rCompArr_reg[25]/C ; oMuxMod_reg[10]/D ; 4.7409997 ; 1.2690002 ; 3.472 ; 5.0 ; clk ; clk ; ", 69, "oMuxMod_reg[10]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 65 ; 0.07964429 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rShift_reg[0][8]/D ; 4.784 ; 1.9159998 ; 2.868 ; 5.0 ; clk ; clk ; ", 64, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 65 ; 0.07964429 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rShift_reg[0][8]/D ; 4.784 ; 1.9159998 ; 2.868 ; 5.0 ; clk ; clk ; ", 64, "rShift_reg[0][8]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 69 ; 0.122645006 ; 5 ; 6 ; 43 ; rCompArr_reg[25]/C ; oMuxDiv_reg[31]/D ; 4.7409997 ; 1.2690002 ; 3.472 ; 5.0 ; clk ; clk ; ", 68, "4.7409997", 7); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 67 ; 0.10164492 ; 5 ; 6 ; 31 ; rShift2_reg[30][31]/C ; oMuxDiv_reg[25]/D ; 4.7619996 ; 1.2690002 ; 3.4929996 ; 5.0 ; clk ; clk ; ", 66, "rShift2_reg[30][31]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 67 ; 0.10164492 ; 5 ; 6 ; 31 ; rShift2_reg[30][31]/C ; oMuxDiv_reg[25]/D ; 4.7619996 ; 1.2690002 ; 3.4929996 ; 5.0 ; clk ; clk ; ", 66, "oMuxDiv_reg[25]/D", 6); // i (O, ck)
+// Elapsed time: 32 seconds
+selectTableHeader(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "From", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1093 ; 2.8576443 ; 2 ; 3 ; 128 ; rCompMax_reg[3]/C ; rSub_reg[15][4]/D ; 2.038 ; 1.2770001 ; 0.76100004 ; 5.0 ; clk ; clk ; ", 1170, "rCompMax_reg[3]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1083 ; 2.8336444 ; 2 ; 3 ; 128 ; rCompMax_reg[3]/C ; rSub_reg[5][6]/D ; 2.062 ; 1.3010001 ; 0.76100004 ; 5.0 ; clk ; clk ; ", 1160, "rCompMax_reg[3]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 3 ; 0.07964429 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[0]/D ; 4.784 ; 1.9159998 ; 2.868 ; 5.0 ; clk ; clk ; ", 0, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 54 ; 0.07964429 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rShift_reg[0][27]/D ; 4.784 ; 1.9159998 ; 2.868 ; 5.0 ; clk ; clk ; ", 51, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 24 ; 0.07964429 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[29]/D ; 4.784 ; 1.9159998 ; 2.868 ; 5.0 ; clk ; clk ; ", 21, "oMuxMod_reg[2]/C", 5); // i (O, ck)
+// Elapsed time: 24 seconds
+selectTableHeader(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "To", 6); // i (O, ck)

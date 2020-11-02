@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sun Nov  1 20:06:06 2020
-# Process ID: 21071
+# Start of session at: Mon Nov  2 21:38:39 2020
+# Process ID: 15605
 # Current directory: /home/ubuntu/work/ic/gcd/euclid
 # Command line: vivado euclid.xpr
 # Log file: /home/ubuntu/work/ic/gcd/euclid/vivado.log
@@ -12,88 +12,85 @@
 start_gui
 open_project euclid.xpr
 update_compile_order -fileset sources_1
-open_run synth_1 -name synth_1
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-close_design
-open_run synth_1 -name synth_1
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-close_design
-open_run synth_1 -name synth_1
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-close_design
-open_run synth_1 -name synth_1
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-close_design
-open_run synth_1 -name synth_1
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
-save_constraints
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-close_design
-open_run synth_1 -name synth_1
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 100 -input_pins -routable_nets -name timing_1
+synth_design -rtl -name rtl_1
+refresh_design
 reset_run synth_1
 launch_runs synth_1 -jobs 4
 wait_on_run synth_1
 refresh_design
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 100 -input_pins -routable_nets -name timing_1
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 1000 -input_pins -routable_nets -name timing_2
+refresh_design
 reset_run synth_1
 launch_runs synth_1 -jobs 4
 wait_on_run synth_1
 close_design
 open_run synth_1 -name synth_1
+close_design
+synth_design -rtl -name rtl_1
 reset_run synth_1
 launch_runs synth_1 -jobs 4
 wait_on_run synth_1
 close_design
 open_run synth_1 -name synth_1
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 200 -input_pins -routable_nets -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 2000 -input_pins -routable_nets -name timing_1
 reset_run synth_1
 launch_runs synth_1 -jobs 4
 wait_on_run synth_1
 close_design
 open_run synth_1 -name synth_1
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 200 -input_pins -routable_nets -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 2000 -input_pins -routable_nets -name timing_1
 reset_run synth_1
 launch_runs synth_1 -jobs 4
 wait_on_run synth_1
 close_design
 open_run synth_1 -name synth_1
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 1000 -input_pins -routable_nets -name timing_1
-save_constraints
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-close_design
-open_run synth_1 -name synth_1
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
-save_constraints
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-close_design
-open_run synth_1 -name synth_1
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 100 -input_pins -routable_nets -name timing_1
-save_constraints
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 2000 -input_pins -routable_nets -name timing_1
 reset_run synth_1
 launch_runs synth_1 -jobs 4
 wait_on_run synth_1
 close_design
 open_run synth_1 -name synth_1
 report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 200 -input_pins -routable_nets -name timing_2
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 2000 -input_pins -routable_nets -name timing_3
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 2000 -input_pins -routable_nets -name timing_2
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 2000 -input_pins -routable_nets -name timing_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+save_constraints -force
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 2000 -input_pins -routable_nets -name timing_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 2000 -input_pins -routable_nets -name timing_1
+synth_design -rtl -name rtl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+refresh_design
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+current_design synth_1
+close_design
+open_run synth_1 -name synth_1
+current_design rtl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+current_design synth_1
+close_design
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 2000 -input_pins -routable_nets -name timing_1
