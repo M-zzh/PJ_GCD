@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Oct 31 16:29:45 2020
+# Process ID: 22713
+# Current directory: /home/ubuntu/work/ic/gcd/euclid
+# Command line: vivado euclid.xpr.
+# Log file: /home/ubuntu/work/ic/gcd/euclid/vivado.log
+# Journal file: /home/ubuntu/work/ic/gcd/euclid/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ubuntu/work/ic/gcd/euclid/euclid.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v
+update_compile_order -fileset sources_1
+add_files -norecurse /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top gcd [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top gcd_test [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+save_constraints

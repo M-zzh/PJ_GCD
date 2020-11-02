@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 28322 
+INFO: Helper process launched with PID 30994 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1319.094 ; gain = 86.773 ; free physical = 3535 ; free virtual = 14954
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1319.094 ; gain = 86.773 ; free physical = 2120 ; free virtual = 13951
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'gcd_test' [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:23]
 WARNING: [Synth 8-3848] Net DONE in module/entity gcd_test does not have driver. [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:32]
@@ -25,7 +25,7 @@ WARNING: [Synth 8-3331] design gcd_test has unconnected port DONE
 WARNING: [Synth 8-3331] design gcd_test has unconnected port rst_n
 WARNING: [Synth 8-3331] design gcd_test has unconnected port START
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1363.719 ; gain = 131.398 ; free physical = 3546 ; free virtual = 14964
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1363.719 ; gain = 131.398 ; free physical = 2132 ; free virtual = 13960
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -38,10 +38,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1363.719 ; gain = 131.398 ; free physical = 3545 ; free virtual = 14964
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1363.719 ; gain = 131.398 ; free physical = 2129 ; free virtual = 13957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1363.719 ; gain = 131.398 ; free physical = 3545 ; free virtual = 14964
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1363.719 ; gain = 131.398 ; free physical = 2129 ; free virtual = 13957
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -49,34 +49,33 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc]
-INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc:2]
 Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1716.773 ; gain = 0.000 ; free physical = 3275 ; free virtual = 14694
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1705.773 ; gain = 0.000 ; free physical = 1853 ; free virtual = 13680
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1716.773 ; gain = 484.453 ; free physical = 3357 ; free virtual = 14776
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1705.773 ; gain = 473.453 ; free physical = 1934 ; free virtual = 13761
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1716.773 ; gain = 484.453 ; free physical = 3356 ; free virtual = 14775
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1705.773 ; gain = 473.453 ; free physical = 1934 ; free virtual = 13761
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1716.773 ; gain = 484.453 ; free physical = 3356 ; free virtual = 14775
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1705.773 ; gain = 473.453 ; free physical = 1936 ; free virtual = 13763
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:90]
 INFO: [Synth 8-5545] ROM "oMuxDiv" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 1716.773 ; gain = 484.453 ; free physical = 3348 ; free virtual = 14767
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:27 . Memory (MB): peak = 1705.773 ; gain = 473.453 ; free physical = 1916 ; free virtual = 13744
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -94,7 +93,10 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 1     
+	  33 Input     32 Bit        Muxes := 1     
+	  34 Input     32 Bit        Muxes := 1     
+	  34 Input      6 Bit        Muxes := 1     
+	  34 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -110,7 +112,10 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 1     
+	  33 Input     32 Bit        Muxes := 1     
+	  34 Input     32 Bit        Muxes := 1     
+	  34 Input      6 Bit        Muxes := 1     
+	  34 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -132,7 +137,7 @@ WARNING: [Synth 8-3331] design gcd_test has unconnected port DONE
 WARNING: [Synth 8-3331] design gcd_test has unconnected port rst_n
 WARNING: [Synth 8-3331] design gcd_test has unconnected port START
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 1716.773 ; gain = 484.453 ; free physical = 3319 ; free virtual = 14740
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:40 . Memory (MB): peak = 1711.773 ; gain = 479.453 ; free physical = 1889 ; free virtual = 13719
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -144,13 +149,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:36 . Memory (MB): peak = 1716.773 ; gain = 484.453 ; free physical = 3194 ; free virtual = 14615
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 1711.773 ; gain = 479.453 ; free physical = 1763 ; free virtual = 13593
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:36 . Memory (MB): peak = 1716.773 ; gain = 484.453 ; free physical = 3194 ; free virtual = 14615
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:58 . Memory (MB): peak = 1845.047 ; gain = 612.727 ; free physical = 1697 ; free virtual = 13532
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -162,7 +167,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1741.773 ; gain = 509.453 ; free physical = 3181 ; free virtual = 14602
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:58 . Memory (MB): peak = 1845.047 ; gain = 612.727 ; free physical = 1691 ; free virtual = 13526
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -186,7 +191,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 1741.773 ; gain = 509.453 ; free physical = 3181 ; free virtual = 14602
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 1845.047 ; gain = 612.727 ; free physical = 1691 ; free virtual = 13526
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-3352] multi-driven net OPB_IBUF[31] with 1st driver pin 'OPB_IBUF[31]_inst/O' [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:23]
 CRITICAL WARNING: [Synth 8-3352] multi-driven net OPB_IBUF[31] with 2nd driver pin 'oMuxMod_reg[31]/Q' [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:93]
@@ -300,7 +305,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 1741.773 ; gain = 509.453 ; free physical = 3181 ; free virtual = 14602
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 1845.047 ; gain = 612.727 ; free physical = 1691 ; free virtual = 13526
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -312,25 +317,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 1741.773 ; gain = 509.453 ; free physical = 3181 ; free virtual = 14602
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 1845.047 ; gain = 612.727 ; free physical = 1691 ; free virtual = 13526
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 1741.773 ; gain = 509.453 ; free physical = 3181 ; free virtual = 14602
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 1845.047 ; gain = 612.727 ; free physical = 1691 ; free virtual = 13526
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 1741.773 ; gain = 509.453 ; free physical = 3181 ; free virtual = 14602
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 1845.047 ; gain = 612.727 ; free physical = 1691 ; free virtual = 13526
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 1741.773 ; gain = 509.453 ; free physical = 3181 ; free virtual = 14602
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 1845.047 ; gain = 612.727 ; free physical = 1691 ; free virtual = 13526
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -348,30 +353,32 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |   140|
-|3     |LUT3   |    64|
-|4     |LUT4   |    49|
-|5     |LUT5   |   506|
-|6     |LUT6   |   574|
-|7     |FDRE   |    64|
-|8     |IBUF   |    65|
-|9     |OBUF   |    32|
-|10    |OBUFT  |     1|
+|3     |LUT2   |    29|
+|4     |LUT3   |    94|
+|5     |LUT4   |    76|
+|6     |LUT5   |   599|
+|7     |LUT6   |   916|
+|8     |MUXF7  |     8|
+|9     |FDRE   |    64|
+|10    |IBUF   |    65|
+|11    |OBUF   |    32|
+|12    |OBUFT  |     1|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |  1496|
+|1     |top      |       |  2025|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 1741.773 ; gain = 509.453 ; free physical = 3181 ; free virtual = 14602
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 1845.047 ; gain = 612.727 ; free physical = 1691 ; free virtual = 13526
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 128 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1741.773 ; gain = 156.398 ; free physical = 3243 ; free virtual = 14664
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 1741.781 ; gain = 509.453 ; free physical = 3243 ; free virtual = 14664
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1845.047 ; gain = 270.672 ; free physical = 1751 ; free virtual = 13586
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 1845.055 ; gain = 612.727 ; free physical = 1751 ; free virtual = 13586
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 205 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 213 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'gcd_test' is not ideal for floorplanning, since the cellview 'gcd_test' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -380,11 +387,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-18 Infos, 8 Warnings, 100 Critical Warnings and 0 Errors encountered.
+17 Infos, 8 Warnings, 100 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 1745.773 ; gain = 525.133 ; free physical = 3241 ; free virtual = 14662
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:01 . Memory (MB): peak = 1845.055 ; gain = 624.414 ; free physical = 1793 ; free virtual = 13628
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint '/home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/gcd_test.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file gcd_test_utilization_synth.rpt -pb gcd_test_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1745.773 ; gain = 0.000 ; free physical = 3239 ; free virtual = 14661
-INFO: [Common 17-206] Exiting Vivado at Sat Oct 31 17:14:26 2020...
+report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1869.059 ; gain = 0.000 ; free physical = 1791 ; free virtual = 13627
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  2 15:21:25 2020...

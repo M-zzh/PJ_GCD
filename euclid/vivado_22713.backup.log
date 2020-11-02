@@ -2,22 +2,38 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sun Nov  1 20:06:06 2020
-# Process ID: 21071
+# Start of session at: Sat Oct 31 16:29:45 2020
+# Process ID: 22713
 # Current directory: /home/ubuntu/work/ic/gcd/euclid
-# Command line: vivado euclid.xpr
+# Command line: vivado euclid.xpr.
 # Log file: /home/ubuntu/work/ic/gcd/euclid/vivado.log
 # Journal file: /home/ubuntu/work/ic/gcd/euclid/vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project euclid.xpr
+open_project /home/ubuntu/work/ic/gcd/euclid/euclid.xpr
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/disk3/Software/Xilinx/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 6195.820 ; gain = 166.457 ; free physical = 3028 ; free virtual = 15078
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 6194.508 ; gain = 142.496 ; free physical = 4025 ; free virtual = 15420
 update_compile_order -fileset sources_1
+add_files -norecurse /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v
+update_compile_order -fileset sources_1
+add_files -norecurse /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v
+WARNING: [filemgmt 56-12] File '/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v' cannot be added to the project because it already exists in the project, skipping this file
+set_property top gcd [current_fileset]
+update_compile_order -fileset sources_1
+set_property top gcd_test [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Oct 31 17:10:11 2020] Launched synth_1...
+Run output will be captured here: /home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Oct 31 17:13:38 2020] Launched synth_1...
+Run output will be captured here: /home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/runme.log
 open_run synth_1 -name synth_1
 Design is defaulting to impl run constrset: constrs_1
 Design is defaulting to synth run part: xc7z020clg400-1
@@ -28,36 +44,21 @@ INFO: [Project 1-479] Netlist was created with Vivado 2018.2
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc:2]
 Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 6581.961 ; gain = 356.328 ; free physical = 2696 ; free virtual = 14746
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 6882.875 ; gain = 350.719 ; free physical = 3514 ; free virtual = 14933
 report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-[Mon Nov  2 15:20:13 2020] Launched synth_1...
-Run output will be captured here: /home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/runme.log
-close_design
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_1
-Design is defaulting to synth run part: xc7z020clg400-1
-INFO: [Netlist 29-17] Analyzing 213 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'gcd_test' is not ideal for floorplanning, since the cellview 'gcd_test' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
-INFO: [Project 1-479] Netlist was created with Vivado 2018.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc]
-Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+save_constraints
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 31 17:18:45 2020...
