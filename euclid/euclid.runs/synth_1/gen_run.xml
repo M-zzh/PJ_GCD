@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1604331881">
-  <File Type="VDS-TIMING-PB" Name="gcd_test_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="gcd_test_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="gcd_test.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="gcd_test_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="gcd_test_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="gcd_test_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="gcd_test.vds"/>
-  <File Type="REPORTS-TCL" Name="gcd_test_reports.tcl"/>
-  <File Type="PA-TCL" Name="gcd_test.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1604373423">
+  <File Type="VDS-TIMING-PB" Name="gcd_pipeline_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="gcd_pipeline_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="gcd_pipeline.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="gcd_pipeline_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="gcd_pipeline_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="gcd_pipeline_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="gcd_pipeline.vds"/>
+  <File Type="REPORTS-TCL" Name="gcd_pipeline_reports.tcl"/>
+  <File Type="PA-TCL" Name="gcd_pipeline.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/gcd_test.v">
+    <File Path="$PSRCDIR/sources_1/new/Sub.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/compare.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -20,31 +27,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/gcd.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/shift.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/Sub.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/compare.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -52,7 +34,27 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/lut.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/shift.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gcd_test.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gcd_pipeline.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -60,7 +62,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="gcd_test"/>
+      <Option Name="TopModule" Val="gcd_pipeline"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

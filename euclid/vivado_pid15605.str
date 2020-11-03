@@ -1670,3 +1670,593 @@ selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 54 ; 0.07964429
 selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 24 ; 0.07964429 ; 7 ; 8 ; 64 ; oMuxMod_reg[2]/C ; rCompMax_reg[29]/D ; 4.784 ; 1.9159998 ; 2.868 ; 5.0 ; clk ; clk ; ", 21, "oMuxMod_reg[2]/C", 5); // i (O, ck)
 // Elapsed time: 24 seconds
 selectTableHeader(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "To", 6); // i (O, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,862 MB. GUI used memory: 120 MB. Current time: 11/3/20 10:49:54 AM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// D (ck): Invalid Top Module: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 2,894 MB. GUI used memory: 120 MB. Current time: 11/3/20 10:51:39 AM CST
+// Elapsed time: 39831 seconds
+selectRadioButton(PAResourceEtoH.FloatingTopDialog_IGNORE_AND_CONTINUE_WITH_INVALID_TOP, "Ignore and continue with invalid top module"); // a (Q, D)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (D)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (D)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: SRC_MGMT_MODE_CHANGE
+// Tcl Message: set_property source_mgmt_mode DisplayOnly [current_project] 
+dismissDialog("Invalid Top Module"); // D (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,926 MB. GUI used memory: 121 MB. Current time: 11/3/20 10:52:04 AM CST
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,958 MB. GUI used memory: 121 MB. Current time: 11/3/20 10:54:29 AM CST
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 178 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bx)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Tue Nov  3 10:54:54 2020] Launched synth_1... Run output will be captured here: /home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+unMaximizeFrame(PAResourceOtoP.PAViews_TIMING, "Timing - Timing Summary - timing_1"); // aw (aE, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 10 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "gcd_pipeline"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 18 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: close [ open /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_pipeline.v w ] 
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_pipeline.v 
+// I (ck): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (I)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (I)
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,985 MB. GUI used memory: 120 MB. Current time: 11/3/20 10:55:44 AM CST
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, gcd_pipeline.v]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, gcd_pipeline.v]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, gcd_pipeline.v]", 2, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, Popup.HeavyWeightWindow)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 215ms to process. Increasing delay to 2000 ms.
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, Popup.HeavyWeightWindow)
+// ah (ck): Synthesis Completed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bx (ck):  Reloading design : addNotify
+// Device view-level: 0.0
+// TclEventType: DESIGN_CLOSE
+// Device view-level: 0.0
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,991 MB. GUI used memory: 112 MB. Current time: 11/3/20 10:55:58 AM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,991 MB. GUI used memory: 113 MB. Current time: 11/3/20 10:55:59 AM CST
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,976 MB. GUI used memory: 109 MB. Current time: 11/3/20 10:56:01 AM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 453 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+dismissDialog("Reloading design"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// aJ (ck): Report Timing Summary: addNotify
+setSpinner(PAResourceQtoS.ReportTimingSummaryDialog_GROUP, "200", true); // d (C, aJ)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aJ)
+dismissDialog("Report Timing Summary"); // aJ (ck)
+// TclEventType: TIMING_RESULTS_STALE
+// bx (ck):  Report Timing Summary : addNotify
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 200 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs 
+dismissDialog("Report Timing Summary"); // bx (ck)
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "-0.428 ns"); // h (Q, ck)
+// PAPropertyPanels.initPanels (Path 1) elapsed time: 0.2s
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "-0.428 ns"); // h (Q, ck)
+// Elapsed time: 11 seconds
+selectTableHeader(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Total Delay", 7); // i (O, ck)
+selectTableHeader(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Total Delay", 7); // i (O, ck)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, gcd_pipeline.v]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, gcd_pipeline.v]", 2, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // g (Q, aE): TRUE
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // g (Q, aE): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_pipeline.v] -no_script -reset -force -quiet 
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_pipeline.v 
+// Tcl Message: file delete -force /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_pipeline.v 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 12 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "gcd_pipeline"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 23 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: close [ open /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_pipeline.v w ] 
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_pipeline.v 
+// I (ck): Define Module: addNotify
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 0, (String) null, 0); // ab (O, I)
+applyEnter(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, (String) null); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rst_n", 0, "Port Name", 0); // ab (O, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "clk", 1, "Port Name", 0); // ab (O, I)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+dismissDialog("Define Module"); // I (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,009 MB. GUI used memory: 127 MB. Current time: 11/3/20 10:57:29 AM CST
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 3,025 MB (+10436kb) [13:19:15]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 3,041 MB. GUI used memory: 161 MB. Current time: 11/3/20 10:58:19 AM CST
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 3,073 MB. GUI used memory: 153 MB. Current time: 11/3/20 11:05:14 AM CST
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,105 MB. GUI used memory: 126 MB. Current time: 11/3/20 11:10:29 AM CST
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 148 MB. Current time: 11/3/20 11:12:19 AM CST
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 3,169 MB. GUI used memory: 166 MB. Current time: 11/3/20 11:12:54 AM CST
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 3,185 MB (+9590kb) [13:35:41]
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,201 MB. GUI used memory: 126 MB. Current time: 11/3/20 11:14:59 AM CST
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 1162 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gcd_pipeline (gcd_pipeline.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gcd_pipeline (gcd_pipeline.v)]", 1, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top gcd_pipeline [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 3,226 MB. GUI used memory: 177 MB. Current time: 11/3/20 11:16:59 AM CST
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Tue Nov  3 11:17:03 2020] Launched synth_1... Run output will be captured here: /home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 249ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Completed: addNotify
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bx (ck):  Reloading design : addNotify
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,231 MB. GUI used memory: 116 MB. Current time: 11/3/20 11:20:49 AM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 3,231 MB. GUI used memory: 117 MB. Current time: 11/3/20 11:20:49 AM CST
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,218 MB. GUI used memory: 112 MB. Current time: 11/3/20 11:21:08 AM CST
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 12226 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] Finished Parsing XDC File [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/constrs_1/new/pin.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.2s
+// Tcl Message: open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 8282.164 ; gain = 0.000 ; free physical = 2249 ; free virtual = 13771 
+// Elapsed time: 245 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+dismissDialog("Reloading design"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// aJ (ck): Report Timing Summary: addNotify
+setSpinner(PAResourceQtoS.ReportTimingSummaryDialog_GROUP, "2000", true); // d (C, aJ)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aJ)
+// 'r' command handler elapsed time: 3 seconds
+dismissDialog("Report Timing Summary"); // aJ (ck)
+// bx (ck):  Report Timing Summary : addNotify
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 2000 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. 
+// [Engine Memory]: 3,388 MB (+45343kb) [13:42:30]
+// Tcl Message: INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,419 MB. GUI used memory: 119 MB. Current time: 11/3/20 11:21:24 AM CST
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Tcl Message: report_timing_summary: Time (s): cpu = 00:00:34 ; elapsed = 00:00:17 . Memory (MB): peak = 8570.832 ; gain = 285.672 ; free physical = 2072 ; free virtual = 13585 
+// Elapsed time: 17 seconds
+dismissDialog("Report Timing Summary"); // bx (ck)
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "-0.428 ns"); // h (Q, ck)
+// PAPropertyPanels.initPanels (Path 1) elapsed time: 0.2s
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "-0.428 ns"); // h (Q, ck)
+selectTableHeader(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "From", 5); // i (O, ck)
+selectTableHeader(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Total Delay", 7); // i (O, ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 210 seconds
+maximizeFrame(PAResourceOtoP.PAViews_TIMING, "Timing - Timing Summary - timing_1"); // aw (aE, ck)
+selectTableHeader(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "To", 6); // i (O, ck)
+// Elapsed time: 22 seconds
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 736 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[2].GCD/rCompArr_reg[21]/C ; GenModule1[2].GCD/oMuxMod_reg[9]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 735, "GenModule1[2].GCD/rCompArr_reg[21]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 729 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[2].GCD/rCompArr_reg[21]/C ; GenModule1[2].GCD/oMuxMod_reg[31]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 728, "GenModule1[2].GCD/rCompArr_reg[21]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 734 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[2].GCD/rCompArr_reg[21]/C ; GenModule1[2].GCD/oMuxMod_reg[7]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 733, "GenModule1[2].GCD/rCompArr_reg[21]/C", 5); // i (O, ck)
+// Elapsed time: 13 seconds
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 993 ; 0.02464473 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[0]/D ; 4.8389993 ; 1.2690002 ; 3.57 ; 5.0 ; clk ; clk ; ", 992, "GenModule1[0].GCD/rCompArr_reg[21]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 992 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[9].GCD/rCompArr_reg[21]/C ; GenModule1[9].GCD/oMuxMod_reg[9]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 991, "GenModule1[9].GCD/rCompArr_reg[21]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxDiv_reg[31]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 0, "GenModule1[0].GCD/rCompArr_reg[21]/C", 5, true, false, false, false, false); // i (O, ck) - Shift Key
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxDiv_reg[31]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 0, "GenModule1[0].GCD/rCompArr_reg[21]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxDiv_reg[31]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 0, "119", 4); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxDiv_reg[31]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 0, "119", 4, false, false, false, false, true); // i (O, ck) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 3,536 MB. GUI used memory: 152 MB. Current time: 11/3/20 11:26:09 AM CST
+// [GUI Memory]: 188 MB (+325kb) [13:47:20]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,536 MB. GUI used memory: 154 MB. Current time: 11/3/20 11:26:10 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,536 MB. GUI used memory: 147 MB. Current time: 11/3/20 11:26:11 AM CST
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "FDRE (Prop_fdre_C_Q) ; (r) 0.478 ; 2.934 ;  ; GenModule1[0].GCD/rCompArr_reg[21]/Q", 0, "FDRE (Prop_fdre_C_Q)", 0); // C (p, ck)
+selectMenuItem(PAResourceOtoP.PathReportTableView_SHOW_DESCRIPTION, "Show Description for Prop_fdre_C_Q"); // ad (aj, ck)
+// Elapsed time: 18 seconds
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k (n, ResizableWindow)
+// Timing Delay Description: hide
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k (n)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,536 MB. GUI used memory: 159 MB. Current time: 11/3/20 11:26:37 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,536 MB. GUI used memory: 148 MB. Current time: 11/3/20 11:26:38 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,536 MB. GUI used memory: 148 MB. Current time: 11/3/20 11:26:38 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,536 MB. GUI used memory: 155 MB. Current time: 11/3/20 11:27:19 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,536 MB. GUI used memory: 148 MB. Current time: 11/3/20 11:27:20 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,536 MB. GUI used memory: 155 MB. Current time: 11/3/20 11:27:22 AM CST
+// [Engine Memory]: 3,685 MB (+134040kb) [13:48:35]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,685 MB. GUI used memory: 157 MB. Current time: 11/3/20 11:27:29 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,685 MB. GUI used memory: 155 MB. Current time: 11/3/20 11:27:34 AM CST
+// Elapsed time: 61 seconds
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=119, unplaced) ; 1.069 ; 4.003 ;  ; GenModule1[0].GCD/rCompArr[21]", 1, "GenModule1[0].GCD/rCompArr[21]", 4); // C (p, ck)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=119, unplaced) ; 1.069 ; 4.003 ;  ; GenModule1[0].GCD/rCompArr[21]", 1, "GenModule1[0].GCD/rCompArr[21]", 4, false, false, false, true, false); // C (p, ck) - Popup Trigger
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=119, unplaced) ; 1.069 ; 4.003 ;  ; GenModule1[0].GCD/rCompArr[21]", 1, "GenModule1[0].GCD/rCompArr[21]", 4, false, false, false, true, false); // C (p, ck) - Popup Trigger
+// HMemoryUtils.trashcanNow. Engine heap size: 3,685 MB. GUI used memory: 156 MB. Current time: 11/3/20 11:27:40 AM CST
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=119, unplaced) ; 1.069 ; 4.003 ;  ; GenModule1[0].GCD/rCompArr[21]", 1, "GenModule1[0].GCD/rCompArr[21]", 4); // C (p, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,685 MB. GUI used memory: 148 MB. Current time: 11/3/20 11:27:40 AM CST
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "FDRE (Prop_fdre_C_Q) ; (r) 0.478 ; 2.934 ;  ; GenModule1[0].GCD/rCompArr_reg[21]/Q", 0, "GenModule1[0].GCD/rCompArr_reg[21]/Q", 4, false, false, false, true, false); // C (p, ck) - Popup Trigger
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "FDRE (Prop_fdre_C_Q) ; (r) 0.478 ; 2.934 ;  ; GenModule1[0].GCD/rCompArr_reg[21]/Q", 0, "GenModule1[0].GCD/rCompArr_reg[21]/Q", 4, false, false, false, true, false); // C (p, ck) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SCHEMATIC, "Schematic"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+selectButton(PAResourceItoN.NetlistSchematicView_SHOW_CELLS_IN_THIS_SCHEMATIC, "2 Cells"); // h (f, ck)
+selectButton(PAResourceItoN.NetlistSchematicView_SHOW_CELLS_IN_THIS_SCHEMATIC, "2 Cells"); // h (f, ck)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+// [GUI Memory]: 197 MB (+82kb) [13:49:08]
+// [GUI Memory]: 207 MB (+117kb) [13:49:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,686 MB. GUI used memory: 173 MB. Current time: 11/3/20 11:27:58 AM CST
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=119, unplaced) ; 1.069 ; 4.003 ;  ; GenModule1[0].GCD/rCompArr[21]", 1, "GenModule1[0].GCD/rCompArr[21]", 4, false, false, false, true, false); // C (p, ck) - Popup Trigger
+// HMemoryUtils.trashcanNow. Engine heap size: 3,686 MB. GUI used memory: 154 MB. Current time: 11/3/20 11:27:59 AM CST
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=119, unplaced) ; 1.069 ; 4.003 ;  ; GenModule1[0].GCD/rCompArr[21]", 1, "GenModule1[0].GCD/rCompArr[21]", 4, false, false, false, true, false); // C (p, ck) - Popup Trigger
+selectMenu(RDIResource.HTable_SET_ELIDING_FOR_TABLE_CELLS, "Elide Setting"); // E (aj, ck)
+selectMenu(PAResourceOtoP.PathReportTableView_FLOORPLANNING, "Floorplanning"); // aa (aj, ck)
+selectMenu(PAResourceOtoP.PathReportTableView_SELECT, "Select"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_SCHEMATIC, "Schematic"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 10 seconds
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+// HMemoryUtils.trashcanNow. Engine heap size: 3,686 MB. GUI used memory: 162 MB. Current time: 11/3/20 11:28:12 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,686 MB. GUI used memory: 152 MB. Current time: 11/3/20 11:28:12 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,686 MB. GUI used memory: 152 MB. Current time: 11/3/20 11:28:13 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,686 MB. GUI used memory: 152 MB. Current time: 11/3/20 11:28:13 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,686 MB. GUI used memory: 152 MB. Current time: 11/3/20 11:28:14 AM CST
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "FDRE (Prop_fdre_C_Q) ; (r) 0.478 ; 2.934 ;  ; GenModule1[0].GCD/rCompArr_reg[21]/Q", 0, "2.934", 2); // C (p, ck)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "FDRE (Prop_fdre_C_Q) ; (r) 0.478 ; 2.934 ;  ; GenModule1[0].GCD/rCompArr_reg[21]/Q", 0, "2.934", 2, false, false, false, true, false); // C (p, ck) - Popup Trigger
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "FDRE (Prop_fdre_C_Q) ; (r) 0.478 ; 2.934 ;  ; GenModule1[0].GCD/rCompArr_reg[21]/Q", 0, "2.934", 2, false, false, false, true, false); // C (p, ck) - Popup Trigger
+selectMenu(RDIResource.HTable_SET_ELIDING_FOR_TABLE_CELLS, "Elide Setting"); // E (aj, ck)
+selectMenu(RDIResource.HTable_SET_ELIDING_FOR_TABLE_CELLS, "Elide Setting"); // E (aj, ck)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=119, unplaced) ; 1.069 ; 4.003 ;  ; GenModule1[0].GCD/rCompArr[21]", 1, "4.003", 2); // C (p, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,686 MB. GUI used memory: 159 MB. Current time: 11/3/20 11:28:20 AM CST
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=119, unplaced) ; 1.069 ; 4.003 ;  ; GenModule1[0].GCD/rCompArr[21]", 1, "4.003", 2, false, false, false, true, false); // C (p, ck) - Popup Trigger
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=119, unplaced) ; 1.069 ; 4.003 ;  ; GenModule1[0].GCD/rCompArr[21]", 1, "4.003", 2, false, false, false, true, false); // C (p, ck) - Popup Trigger
+selectMenu(RDIResource.HTable_SET_ELIDING_FOR_TABLE_CELLS, "Elide Setting"); // E (aj, ck)
+selectMenu(PAResourceOtoP.PathReportTableView_FLOORPLANNING, "Floorplanning"); // aa (aj, ck)
+selectMenu(PAResourceOtoP.PathReportTableView_SELECT, "Select"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_SCHEMATIC, "Schematic"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+selectButton(PAResourceItoN.NetlistSchematicView_SHOW_CELLS_IN_THIS_SCHEMATIC, "3 Cells"); // h (f, ck)
+selectButton(PAResourceItoN.NetlistSchematicView_SHOW_CELLS_IN_THIS_SCHEMATIC, "3 Cells"); // h (f, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,707 MB. GUI used memory: 150 MB. Current time: 11/3/20 11:28:34 AM CST
+selectButton(PAResourceItoN.NetlistSchematicView_SHOW_CELLS_IN_THIS_SCHEMATIC, "3 Cells"); // h (f, ck)
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 418, 170, 1197, 635, false, false, false, true, false); // f (k, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_SHOW_WORLD_VIEW, "Show World View"); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_SHOW_WORLD_VIEW
+selectButton(RDIResource.HWorldViewOverview_HIDE_WORLD_VIEW, (String) null); // a (w, ck)
+selectButton(RDIResource.HWorldViewOverview_HIDE_WORLD_VIEW, (String) null); // a (w, ck)
+selectButton(PAResourceQtoS.SchematicView_PREVIOUS, "Schematic_previousview"); // B (f, ck)
+selectButton(PAResourceQtoS.SchematicView_PREVIOUS, "Schematic_previousview"); // B (f, ck)
+selectButton(PAResourceQtoS.SchematicView_PREVIOUS, "Schematic_previousview"); // B (f, ck)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+// HMemoryUtils.trashcanNow. Engine heap size: 3,707 MB. GUI used memory: 158 MB. Current time: 11/3/20 11:28:58 AM CST
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Source ; GenModule1[0].GCD/rCompArr_reg[21]/C   (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@2.500ns period=5.000ns})", 2, "GenModule1[0].GCD/rCompArr_reg[21]/C   (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@2.500ns period=5.000ns})", 1); // C (p, ck)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Source ; GenModule1[0].GCD/rCompArr_reg[21]/C   (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@2.500ns period=5.000ns})", 2, "GenModule1[0].GCD/rCompArr_reg[21]/C   (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@2.500ns period=5.000ns})", 1, false, false, false, true, false); // C (p, ck) - Popup Trigger
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Source ; GenModule1[0].GCD/rCompArr_reg[21]/C   (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@2.500ns period=5.000ns})", 2, "GenModule1[0].GCD/rCompArr_reg[21]/C   (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@2.500ns period=5.000ns})", 1, false, false, false, true, false); // C (p, ck) - Popup Trigger
+selectMenu(RDIResource.HTable_SET_ELIDING_FOR_TABLE_CELLS, "Elide Setting"); // E (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceOtoP.PathReportTableView_FLOORPLANNING, "Floorplanning"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceOtoP.PathReportTableView_SELECT, "Select"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_SCHEMATIC, "Schematic"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Name ; Path 1", 0, "Path 1", 1, false, false, false, true, false); // C (p, ck) - Popup Trigger
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Name ; Path 1", 0, "Path 1", 1, false, false, false, true, false); // C (p, ck) - Popup Trigger
+selectMenu(RDIResource.HTable_SET_ELIDING_FOR_TABLE_CELLS, "Elide Setting"); // E (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceOtoP.PathReportTableView_FLOORPLANNING, "Floorplanning"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_SCHEMATIC, "Schematic"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Path 1 - timing_1", 2); // k (j, ck)
+// Elapsed time: 21 seconds
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Source ; GenModule1[0].GCD/rCompArr_reg[21]/C   (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@2.500ns period=5.000ns})", 2, "Source", 0); // C (p, ck)
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Source ; GenModule1[0].GCD/rCompArr_reg[21]/C   (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@2.500ns period=5.000ns})", 2, "Source", 0, false, false, false, true, false); // C (p, ck) - Popup Trigger
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Source ; GenModule1[0].GCD/rCompArr_reg[21]/C   (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@2.500ns period=5.000ns})", 2, "Source", 0, false, false, false, true, false); // C (p, ck) - Popup Trigger
+selectMenu(RDIResource.HTable_SET_ELIDING_FOR_TABLE_CELLS, "Elide Setting"); // E (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceOtoP.PathReportTableView_FLOORPLANNING, "Floorplanning"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceOtoP.PathReportTableView_SELECT, "Select"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_SCHEMATIC, "Schematic"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Path 1 - timing_1", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 3); // k (j, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxDiv_reg[31]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 0, "GenModule1[0].GCD/rCompArr_reg[21]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[10]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 1, "GenModule1[0].GCD/rCompArr_reg[21]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 3 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[11]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 2, "GenModule1[0].GCD/rCompArr_reg[21]/C", 5); // i (O, ck)
+// [GUI Memory]: 218 MB (+636kb) [13:51:32]
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 4 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[12]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 3, "GenModule1[0].GCD/oMuxMod_reg[12]/D", 6); // i (O, ck)
+// Elapsed time: 14 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aE (Q, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gcd_pipeline (gcd_pipeline.v), GenModule1[0].GCD : gcd_test (gcd_test.v)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gcd_pipeline (gcd_pipeline.v), GenModule1[0].GCD : gcd_test (gcd_test.v)]", 2, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectTab((HResource) null, (HResource) null, "Netlist", 1); // aE (Q, ck)
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[gcd_pipeline, GenModule1[0].GCD (gcd_test), Leaf Cells (4790)]", 5); // aW (O, ck)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[gcd_pipeline, GenModule1[0].GCD (gcd_test)]", 3, true); // aW (O, ck) - Node
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[gcd_pipeline, GenModule1[0].GCD (gcd_test)]", 3, true, false, false, false, true, false); // aW (O, ck) - Popup Trigger - Node
+selectMenu(PAResourceItoN.InstanceMenu_FLOORPLANNING, "Floorplanning"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceOtoP.PrimitivesMenu_HIGHLIGHT_LEAF_CELLS, "Highlight Leaf Cells"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_SCHEMATIC, "Schematic"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// t (ck):  Generate Schematic : addNotify
+dismissDialog("Generate Schematic"); // t (ck)
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 340, 241, 1197, 635, false, false, false, true, false); // f (k, ck) - Popup Trigger
+// [GUI Memory]: 237 MB (+8091kb) [13:52:38]
+// Elapsed time: 24 seconds
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxDiv_reg[31]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 0, "GenModule1[0].GCD/rCompArr_reg[21]/C", 5); // i (O, ck)
+// [GUI Memory]: 249 MB (+439kb) [13:52:44]
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[10]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 1, "GenModule1[0].GCD/rCompArr_reg[21]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 3 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[11]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 2, "GenModule1[0].GCD/rCompArr_reg[21]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 4 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[12]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 3, "GenModule1[0].GCD/rCompArr_reg[21]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 5 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[13]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 4, "GenModule1[0].GCD/rCompArr_reg[21]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 4 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[12]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 3, "GenModule1[0].GCD/rCompArr_reg[21]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 3 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[11]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 2, "GenModule1[0].GCD/rCompArr_reg[21]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxDiv_reg[31]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 0, "GenModule1[0].GCD/oMuxDiv_reg[31]/D", 6); // i (O, ck)
+// [GUI Memory]: 266 MB (+3982kb) [13:53:03]
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[10]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 1, "GenModule1[0].GCD/oMuxMod_reg[10]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 3 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[11]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 2, "GenModule1[0].GCD/oMuxMod_reg[11]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 4 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[12]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 3, "GenModule1[0].GCD/oMuxMod_reg[12]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 5 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[13]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 4, "GenModule1[0].GCD/oMuxMod_reg[13]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 5 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[13]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 4, "GenModule1[0].GCD/oMuxMod_reg[13]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 6 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[14]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 5, "GenModule1[0].GCD/oMuxMod_reg[14]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 5 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[13]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 4, "GenModule1[0].GCD/oMuxMod_reg[13]/D", 6); // i (O, ck)
+// [GUI Memory]: 279 MB (+524kb) [13:53:17]
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 6 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[14]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 5, "GenModule1[0].GCD/oMuxMod_reg[14]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 5 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[13]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 4, "GenModule1[0].GCD/oMuxMod_reg[13]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 4 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[12]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 3, "GenModule1[0].GCD/oMuxMod_reg[12]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 3 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[11]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 2, "GenModule1[0].GCD/oMuxMod_reg[11]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[10]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 1, "GenModule1[0].GCD/oMuxMod_reg[10]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxDiv_reg[31]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 0, "GenModule1[0].GCD/oMuxDiv_reg[31]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[10]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 1, "GenModule1[0].GCD/oMuxMod_reg[10]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 3 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[11]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 2, "GenModule1[0].GCD/oMuxMod_reg[11]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 4 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[12]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 3, "GenModule1[0].GCD/oMuxMod_reg[12]/D", 6); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 5 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[13]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 4, "GenModule1[0].GCD/oMuxMod_reg[13]/D", 6); // i (O, ck)
+// Elapsed time: 11 seconds
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[10]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 1, "GenModule1[0].GCD/rCompArr_reg[21]/C", 5); // i (O, ck)
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; -0.42835602 ; 5 ; 6 ; 119 ; GenModule1[0].GCD/rCompArr_reg[21]/C ; GenModule1[0].GCD/oMuxMod_reg[10]/D ; 5.292001 ; 1.2690002 ; 4.0230002 ; 5.0 ; clk ; clk ; ", 1, "GenModule1[0].GCD/rCompArr_reg[21]/C", 5, false, false, false, false, true); // i (O, ck) - Double Click
+// [GUI Memory]: 294 MB (+426kb) [13:53:48]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,711 MB. GUI used memory: 195 MB. Current time: 11/3/20 11:32:38 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,711 MB. GUI used memory: 185 MB. Current time: 11/3/20 11:32:39 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,711 MB. GUI used memory: 178 MB. Current time: 11/3/20 11:32:40 AM CST
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=119, unplaced) ; 1.069 ; 4.003 ;  ; GenModule1[0].GCD/rCompArr[21]", 1, "net (fo=119, unplaced)", 0); // C (p, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,711 MB. GUI used memory: 184 MB. Current time: 11/3/20 11:33:20 AM CST
