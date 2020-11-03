@@ -9,14 +9,14 @@
     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
 source gcd_pipeline.tcl -notrace
-Command: synth_design -top gcd_pipeline -part xc7z020clg400-1
+Command: synth_design -top gcd_pipeline -part xc7z020clg400-1 -fanout_limit 32 -fsm_extraction one_hot -keep_equivalent_registers -resource_sharing off -no_lc -shreg_min_size 5
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 32478 
+INFO: Helper process launched with PID 4753 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1318.602 ; gain = 86.773 ; free physical = 2104 ; free virtual = 13610
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1318.598 ; gain = 86.773 ; free physical = 833 ; free virtual = 12456
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'gcd_pipeline' [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_pipeline.v:23]
 INFO: [Synth 8-6157] synthesizing module 'gcd_test' [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_test.v:23]
@@ -26,7 +26,7 @@ INFO: [Synth 8-6155] done synthesizing module 'gcd_pipeline' (2#1) [/home/ubuntu
 WARNING: [Synth 8-3331] design gcd_test has unconnected port rst_n
 WARNING: [Synth 8-3331] design gcd_pipeline has unconnected port DONE
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1363.227 ; gain = 131.398 ; free physical = 2111 ; free virtual = 13617
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1363.223 ; gain = 131.398 ; free physical = 838 ; free virtual = 12462
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -39,10 +39,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1363.227 ; gain = 131.398 ; free physical = 2113 ; free virtual = 13619
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1363.223 ; gain = 131.398 ; free physical = 840 ; free virtual = 12464
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1363.227 ; gain = 131.398 ; free physical = 2113 ; free virtual = 13619
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1363.223 ; gain = 131.398 ; free physical = 840 ; free virtual = 12464
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -56,27 +56,27 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.47 . Memory (MB): peak = 1904.711 ; gain = 26.000 ; free physical = 1629 ; free virtual = 13136
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.49 . Memory (MB): peak = 1904.707 ; gain = 26.000 ; free physical = 353 ; free virtual = 11977
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 1904.711 ; gain = 672.883 ; free physical = 1892 ; free virtual = 13399
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 1904.707 ; gain = 672.883 ; free physical = 616 ; free virtual = 12240
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 1904.711 ; gain = 672.883 ; free physical = 1892 ; free virtual = 13399
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 1904.707 ; gain = 672.883 ; free physical = 616 ; free virtual = 12240
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 1904.711 ; gain = 672.883 ; free physical = 1892 ; free virtual = 13399
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 1904.707 ; gain = 672.883 ; free physical = 616 ; free virtual = 12240
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-327] inferring latch for variable 'iCompA[0]' [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_pipeline.v:38]
 WARNING: [Synth 8-327] inferring latch for variable 'iCompB[0]' [/home/ubuntu/work/ic/gcd/euclid/euclid.srcs/sources_1/new/gcd_pipeline.v:41]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 1904.711 ; gain = 672.883 ; free physical = 1882 ; free virtual = 13390
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 1904.707 ; gain = 672.883 ; free physical = 605 ; free virtual = 12230
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -162,8 +162,6 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:/\rShift_reg[30][27] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:/\rShift_reg[30][28] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:/\rShift_reg[30][29] )
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[30][30]' (FD) to 'gcd_test:/rShift_reg[31][31]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[30][31]' (FD) to 'gcd_test:/rShift_reg[29][30]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:/\rShift_reg[31][0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:/\rShift_reg[31][1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:/\rShift_reg[31][2] )
@@ -195,7 +193,6 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:/\rShift_reg[31][28] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:/\rShift_reg[31][29] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:/\rShift_reg[31][30] )
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[31][31]' (FD) to 'gcd_test:/rShift_reg[29][29]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:/\rShift_reg[29][0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:/\rShift_reg[29][1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:/\rShift_reg[29][2] )
@@ -225,9 +222,6 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:/\rShift_reg[29][26] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:/\rShift_reg[29][27] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:/\rShift_reg[29][28] )
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[29][29]' (FD) to 'gcd_test:/rShift_reg[28][28]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[29][30]' (FD) to 'gcd_test:/rShift_reg[28][29]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[29][31]' (FD) to 'gcd_test:/rShift_reg[28][30]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:/\rShift_reg[28][0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:/\rShift_reg[28][1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:/\rShift_reg[28][2] )
@@ -239,101 +233,6 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:/\rShift_reg[28][8] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gcd_test:/\rShift_reg[28][9] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[28][28]' (FD) to 'gcd_test:/rShift_reg[27][27]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[28][29]' (FD) to 'gcd_test:/rShift_reg[27][28]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[28][30]' (FD) to 'gcd_test:/rShift_reg[27][29]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[28][31]' (FD) to 'gcd_test:/rShift_reg[27][30]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[27][27]' (FD) to 'gcd_test:/rShift_reg[26][26]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[27][28]' (FD) to 'gcd_test:/rShift_reg[26][27]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[27][29]' (FD) to 'gcd_test:/rShift_reg[26][28]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[27][30]' (FD) to 'gcd_test:/rShift_reg[26][29]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[27][31]' (FD) to 'gcd_test:/rShift_reg[26][30]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[26][26]' (FD) to 'gcd_test:/rShift_reg[25][25]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[26][27]' (FD) to 'gcd_test:/rShift_reg[25][26]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[26][28]' (FD) to 'gcd_test:/rShift_reg[25][27]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[26][29]' (FD) to 'gcd_test:/rShift_reg[25][28]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[26][30]' (FD) to 'gcd_test:/rShift_reg[25][29]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[26][31]' (FD) to 'gcd_test:/rShift_reg[25][30]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[25][25]' (FD) to 'gcd_test:/rShift_reg[24][24]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[25][26]' (FD) to 'gcd_test:/rShift_reg[24][25]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[25][27]' (FD) to 'gcd_test:/rShift_reg[24][26]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[25][28]' (FD) to 'gcd_test:/rShift_reg[24][27]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[25][29]' (FD) to 'gcd_test:/rShift_reg[24][28]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[25][30]' (FD) to 'gcd_test:/rShift_reg[24][29]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[25][31]' (FD) to 'gcd_test:/rShift_reg[24][30]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[24][24]' (FD) to 'gcd_test:/rShift_reg[23][23]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[24][25]' (FD) to 'gcd_test:/rShift_reg[23][24]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[24][26]' (FD) to 'gcd_test:/rShift_reg[23][25]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[24][27]' (FD) to 'gcd_test:/rShift_reg[23][26]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[24][28]' (FD) to 'gcd_test:/rShift_reg[23][27]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[24][29]' (FD) to 'gcd_test:/rShift_reg[23][28]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[24][30]' (FD) to 'gcd_test:/rShift_reg[23][29]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[24][31]' (FD) to 'gcd_test:/rShift_reg[23][30]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[23][23]' (FD) to 'gcd_test:/rShift_reg[22][22]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[23][24]' (FD) to 'gcd_test:/rShift_reg[22][23]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[23][25]' (FD) to 'gcd_test:/rShift_reg[22][24]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[23][26]' (FD) to 'gcd_test:/rShift_reg[22][25]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[23][27]' (FD) to 'gcd_test:/rShift_reg[22][26]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[23][28]' (FD) to 'gcd_test:/rShift_reg[22][27]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[23][29]' (FD) to 'gcd_test:/rShift_reg[22][28]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[23][30]' (FD) to 'gcd_test:/rShift_reg[22][29]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[23][31]' (FD) to 'gcd_test:/rShift_reg[22][30]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[22][22]' (FD) to 'gcd_test:/rShift_reg[21][21]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[22][23]' (FD) to 'gcd_test:/rShift_reg[21][22]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[22][24]' (FD) to 'gcd_test:/rShift_reg[21][23]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[22][25]' (FD) to 'gcd_test:/rShift_reg[21][24]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[22][26]' (FD) to 'gcd_test:/rShift_reg[21][25]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[22][27]' (FD) to 'gcd_test:/rShift_reg[21][26]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[22][28]' (FD) to 'gcd_test:/rShift_reg[21][27]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[22][29]' (FD) to 'gcd_test:/rShift_reg[21][28]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[22][30]' (FD) to 'gcd_test:/rShift_reg[21][29]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[22][31]' (FD) to 'gcd_test:/rShift_reg[21][30]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[21][21]' (FD) to 'gcd_test:/rShift_reg[20][20]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[21][22]' (FD) to 'gcd_test:/rShift_reg[20][21]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[21][23]' (FD) to 'gcd_test:/rShift_reg[20][22]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[21][24]' (FD) to 'gcd_test:/rShift_reg[20][23]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[21][25]' (FD) to 'gcd_test:/rShift_reg[20][24]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[21][26]' (FD) to 'gcd_test:/rShift_reg[20][25]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[21][27]' (FD) to 'gcd_test:/rShift_reg[20][26]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[21][28]' (FD) to 'gcd_test:/rShift_reg[20][27]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[21][29]' (FD) to 'gcd_test:/rShift_reg[20][28]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[21][30]' (FD) to 'gcd_test:/rShift_reg[20][29]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[21][31]' (FD) to 'gcd_test:/rShift_reg[20][30]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[20][20]' (FD) to 'gcd_test:/rShift_reg[19][19]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[20][21]' (FD) to 'gcd_test:/rShift_reg[19][20]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[20][22]' (FD) to 'gcd_test:/rShift_reg[19][21]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[20][23]' (FD) to 'gcd_test:/rShift_reg[19][22]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[20][24]' (FD) to 'gcd_test:/rShift_reg[19][23]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[20][25]' (FD) to 'gcd_test:/rShift_reg[19][24]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[20][26]' (FD) to 'gcd_test:/rShift_reg[19][25]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[20][27]' (FD) to 'gcd_test:/rShift_reg[19][26]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[20][28]' (FD) to 'gcd_test:/rShift_reg[19][27]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[20][29]' (FD) to 'gcd_test:/rShift_reg[19][28]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[20][30]' (FD) to 'gcd_test:/rShift_reg[19][29]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[20][31]' (FD) to 'gcd_test:/rShift_reg[19][30]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[19][19]' (FD) to 'gcd_test:/rShift_reg[18][18]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[19][20]' (FD) to 'gcd_test:/rShift_reg[18][19]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[19][21]' (FD) to 'gcd_test:/rShift_reg[18][20]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[19][22]' (FD) to 'gcd_test:/rShift_reg[18][21]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[19][23]' (FD) to 'gcd_test:/rShift_reg[18][22]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[19][24]' (FD) to 'gcd_test:/rShift_reg[18][23]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[19][25]' (FD) to 'gcd_test:/rShift_reg[18][24]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[19][26]' (FD) to 'gcd_test:/rShift_reg[18][25]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[19][27]' (FD) to 'gcd_test:/rShift_reg[18][26]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[19][28]' (FD) to 'gcd_test:/rShift_reg[18][27]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[19][29]' (FD) to 'gcd_test:/rShift_reg[18][28]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[19][30]' (FD) to 'gcd_test:/rShift_reg[18][29]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[19][31]' (FD) to 'gcd_test:/rShift_reg[18][30]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[18][18]' (FD) to 'gcd_test:/rShift_reg[17][17]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[18][19]' (FD) to 'gcd_test:/rShift_reg[17][18]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[18][20]' (FD) to 'gcd_test:/rShift_reg[17][19]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[18][21]' (FD) to 'gcd_test:/rShift_reg[17][20]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[18][22]' (FD) to 'gcd_test:/rShift_reg[17][21]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[18][23]' (FD) to 'gcd_test:/rShift_reg[17][22]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[18][24]' (FD) to 'gcd_test:/rShift_reg[17][23]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[18][25]' (FD) to 'gcd_test:/rShift_reg[17][24]'
-INFO: [Synth 8-3886] merging instance 'gcd_test:/rShift_reg[18][26]' (FD) to 'gcd_test:/rShift_reg[17][25]'
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-3332] Sequential element (rShift_reg[1][0]) is unused and will be removed from module gcd_test.
 WARNING: [Synth 8-3332] Sequential element (rShift_reg[2][1]) is unused and will be removed from module gcd_test.
 WARNING: [Synth 8-3332] Sequential element (rShift_reg[2][0]) is unused and will be removed from module gcd_test.
@@ -436,43 +335,43 @@ WARNING: [Synth 8-3332] Sequential element (rShift_reg[14][6]) is unused and wil
 WARNING: [Synth 8-3332] Sequential element (rShift_reg[14][5]) is unused and will be removed from module gcd_test.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:38 . Memory (MB): peak = 1904.711 ; gain = 672.883 ; free physical = 1846 ; free virtual = 13359
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 1904.707 ; gain = 672.883 ; free physical = 574 ; free virtual = 12204
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+------------------+------------+----------+
 |      |RTL Partition     |Replication |Instances |
 +------+------------------+------------+----------+
-|1     |gcd_test          |          31|      8455|
+|1     |gcd_test          |          31|      9469|
 |2     |gcd_pipeline__GC0 |           1|        64|
-|3     |gcd_test__1       |           1|      4525|
+|3     |gcd_test__1       |           1|      5399|
 +------+------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 1904.711 ; gain = 672.883 ; free physical = 1726 ; free virtual = 13239
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:46 . Memory (MB): peak = 1904.707 ; gain = 672.883 ; free physical = 463 ; free virtual = 12093
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:50 . Memory (MB): peak = 1904.711 ; gain = 672.883 ; free physical = 1707 ; free virtual = 13220
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:50 . Memory (MB): peak = 1904.707 ; gain = 672.883 ; free physical = 443 ; free virtual = 12073
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+------------------+------------+----------+
 |      |RTL Partition     |Replication |Instances |
 +------+------------------+------------+----------+
-|1     |gcd_test          |          31|      8455|
+|1     |gcd_test          |          31|      9469|
 |2     |gcd_pipeline__GC0 |           1|        64|
-|3     |gcd_test__1       |           1|      4525|
+|3     |gcd_test__1       |           1|      5399|
 +------+------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:01:06 . Memory (MB): peak = 1937.516 ; gain = 705.688 ; free physical = 1572 ; free virtual = 13085
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:01:06 . Memory (MB): peak = 1983.863 ; gain = 752.039 ; free physical = 256 ; free virtual = 11886
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -496,7 +395,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:12 . Memory (MB): peak = 1970.469 ; gain = 738.641 ; free physical = 1555 ; free virtual = 13068
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:13 . Memory (MB): peak = 2063.020 ; gain = 831.195 ; free physical = 281 ; free virtual = 11870
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -509,7 +408,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:12 . Memory (MB): peak = 1970.469 ; gain = 738.641 ; free physical = 1559 ; free virtual = 13072
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:13 . Memory (MB): peak = 2063.020 ; gain = 831.195 ; free physical = 282 ; free virtual = 11871
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -521,25 +420,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:01:22 . Memory (MB): peak = 1970.469 ; gain = 738.641 ; free physical = 1548 ; free virtual = 13061
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:17 . Memory (MB): peak = 2063.020 ; gain = 831.195 ; free physical = 258 ; free virtual = 11847
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:01:22 . Memory (MB): peak = 1970.469 ; gain = 738.641 ; free physical = 1548 ; free virtual = 13061
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:17 . Memory (MB): peak = 2063.020 ; gain = 831.195 ; free physical = 258 ; free virtual = 11847
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:24 . Memory (MB): peak = 1970.469 ; gain = 738.641 ; free physical = 1545 ; free virtual = 13057
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:05 ; elapsed = 00:01:19 . Memory (MB): peak = 2063.020 ; gain = 831.195 ; free physical = 258 ; free virtual = 11847
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:01:24 . Memory (MB): peak = 1970.469 ; gain = 738.641 ; free physical = 1545 ; free virtual = 13057
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:05 ; elapsed = 00:01:19 . Memory (MB): peak = 2063.020 ; gain = 831.195 ; free physical = 258 ; free virtual = 11847
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -558,12 +457,12 @@ Report Cell Usage:
 |1     |BUFG   |     2|
 |2     |CARRY4 | 12160|
 |3     |LUT1   | 15376|
-|4     |LUT2   | 33992|
-|5     |LUT3   |  3484|
-|6     |LUT4   | 20111|
-|7     |LUT5   |  4053|
-|8     |LUT6   | 20869|
-|9     |FDRE   | 36957|
+|4     |LUT2   | 31760|
+|5     |LUT3   |  6617|
+|6     |LUT4   | 17632|
+|7     |LUT5   |  2816|
+|8     |LUT6   | 20030|
+|9     |FDRE   | 73915|
 |10    |LD     |    64|
 |11    |IBUF   |    66|
 |12    |OBUF   |    32|
@@ -574,46 +473,46 @@ Report Instance Areas:
 +------+-----------------------+------------+-------+
 |      |Instance               |Module      |Cells  |
 +------+-----------------------+------------+-------+
-|1     |top                    |            | 147167|
-|2     |  \GenModule1[0].GCD   |gcd_test    |   4788|
-|3     |  \GenModule1[10].GCD  |gcd_test_0  |   4688|
-|4     |  \GenModule1[11].GCD  |gcd_test_1  |   4688|
-|5     |  \GenModule1[12].GCD  |gcd_test_2  |   4688|
-|6     |  \GenModule1[13].GCD  |gcd_test_3  |   4688|
-|7     |  \GenModule1[14].GCD  |gcd_test_4  |   4688|
-|8     |  \GenModule1[15].GCD  |gcd_test_5  |   4688|
-|9     |  \GenModule1[16].GCD  |gcd_test_6  |   4688|
-|10    |  \GenModule1[17].GCD  |gcd_test_7  |   4688|
-|11    |  \GenModule1[18].GCD  |gcd_test_8  |   4688|
-|12    |  \GenModule1[19].GCD  |gcd_test_9  |   4688|
-|13    |  \GenModule1[1].GCD   |gcd_test_10 |   4688|
-|14    |  \GenModule1[20].GCD  |gcd_test_11 |   4688|
-|15    |  \GenModule1[21].GCD  |gcd_test_12 |   4688|
-|16    |  \GenModule1[22].GCD  |gcd_test_13 |   4688|
-|17    |  \GenModule1[23].GCD  |gcd_test_14 |   4688|
-|18    |  \GenModule1[24].GCD  |gcd_test_15 |   4688|
-|19    |  \GenModule1[25].GCD  |gcd_test_16 |   4688|
-|20    |  \GenModule1[26].GCD  |gcd_test_17 |   4688|
-|21    |  \GenModule1[27].GCD  |gcd_test_18 |   4688|
-|22    |  \GenModule1[28].GCD  |gcd_test_19 |   4688|
-|23    |  \GenModule1[29].GCD  |gcd_test_20 |   4688|
-|24    |  \GenModule1[2].GCD   |gcd_test_21 |   4688|
-|25    |  \GenModule1[30].GCD  |gcd_test_22 |   4688|
-|26    |  \GenModule1[31].GCD  |gcd_test_23 |   1574|
-|27    |  \GenModule1[3].GCD   |gcd_test_24 |   4688|
-|28    |  \GenModule1[4].GCD   |gcd_test_25 |   4688|
-|29    |  \GenModule1[5].GCD   |gcd_test_26 |   4688|
-|30    |  \GenModule1[6].GCD   |gcd_test_27 |   4688|
-|31    |  \GenModule1[7].GCD   |gcd_test_28 |   4688|
-|32    |  \GenModule1[8].GCD   |gcd_test_29 |   4688|
-|33    |  \GenModule1[9].GCD   |gcd_test_30 |   4688|
+|1     |top                    |            | 180471|
+|2     |  \GenModule1[0].GCD   |gcd_test    |   5924|
+|3     |  \GenModule1[10].GCD  |gcd_test_0  |   5728|
+|4     |  \GenModule1[11].GCD  |gcd_test_1  |   5728|
+|5     |  \GenModule1[12].GCD  |gcd_test_2  |   5728|
+|6     |  \GenModule1[13].GCD  |gcd_test_3  |   5728|
+|7     |  \GenModule1[14].GCD  |gcd_test_4  |   5728|
+|8     |  \GenModule1[15].GCD  |gcd_test_5  |   5728|
+|9     |  \GenModule1[16].GCD  |gcd_test_6  |   5728|
+|10    |  \GenModule1[17].GCD  |gcd_test_7  |   5728|
+|11    |  \GenModule1[18].GCD  |gcd_test_8  |   5728|
+|12    |  \GenModule1[19].GCD  |gcd_test_9  |   5728|
+|13    |  \GenModule1[1].GCD   |gcd_test_10 |   5728|
+|14    |  \GenModule1[20].GCD  |gcd_test_11 |   5728|
+|15    |  \GenModule1[21].GCD  |gcd_test_12 |   5728|
+|16    |  \GenModule1[22].GCD  |gcd_test_13 |   5728|
+|17    |  \GenModule1[23].GCD  |gcd_test_14 |   5728|
+|18    |  \GenModule1[24].GCD  |gcd_test_15 |   5728|
+|19    |  \GenModule1[25].GCD  |gcd_test_16 |   5728|
+|20    |  \GenModule1[26].GCD  |gcd_test_17 |   5728|
+|21    |  \GenModule1[27].GCD  |gcd_test_18 |   5728|
+|22    |  \GenModule1[28].GCD  |gcd_test_19 |   5728|
+|23    |  \GenModule1[29].GCD  |gcd_test_20 |   5728|
+|24    |  \GenModule1[2].GCD   |gcd_test_21 |   5728|
+|25    |  \GenModule1[30].GCD  |gcd_test_22 |   5664|
+|26    |  \GenModule1[31].GCD  |gcd_test_23 |   2606|
+|27    |  \GenModule1[3].GCD   |gcd_test_24 |   5728|
+|28    |  \GenModule1[4].GCD   |gcd_test_25 |   5728|
+|29    |  \GenModule1[5].GCD   |gcd_test_26 |   5728|
+|30    |  \GenModule1[6].GCD   |gcd_test_27 |   5728|
+|31    |  \GenModule1[7].GCD   |gcd_test_28 |   5728|
+|32    |  \GenModule1[8].GCD   |gcd_test_29 |   5728|
+|33    |  \GenModule1[9].GCD   |gcd_test_30 |   5728|
 +------+-----------------------+------------+-------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:01:24 . Memory (MB): peak = 1970.469 ; gain = 738.641 ; free physical = 1545 ; free virtual = 13057
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:05 ; elapsed = 00:01:19 . Memory (MB): peak = 2063.020 ; gain = 831.195 ; free physical = 258 ; free virtual = 11847
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2051 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1970.469 ; gain = 197.156 ; free physical = 1601 ; free virtual = 13114
-Synthesis Optimization Complete : Time (s): cpu = 00:01:11 ; elapsed = 00:01:25 . Memory (MB): peak = 1970.477 ; gain = 738.641 ; free physical = 1601 ; free virtual = 13114
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 2063.020 ; gain = 289.711 ; free physical = 316 ; free virtual = 11904
+Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:20 . Memory (MB): peak = 2063.027 ; gain = 831.195 ; free physical = 320 ; free virtual = 11909
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 12290 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -624,12 +523,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LD => LDCE: 64 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-218 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+117 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:28 ; elapsed = 00:01:41 . Memory (MB): peak = 2022.812 ; gain = 802.664 ; free physical = 1598 ; free virtual = 13111
+synth_design: Time (s): cpu = 00:01:26 ; elapsed = 00:01:39 . Memory (MB): peak = 2090.363 ; gain = 870.219 ; free physical = 379 ; free virtual = 11947
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint '/home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/gcd_pipeline.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2046.824 ; gain = 24.012 ; free physical = 1581 ; free virtual = 13108
+write_checkpoint: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2090.363 ; gain = 0.000 ; free physical = 388 ; free virtual = 11940
 INFO: [runtcl-4] Executing : report_utilization -file gcd_pipeline_utilization_synth.rpt -pb gcd_pipeline_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.76 ; elapsed = 00:00:00.81 . Memory (MB): peak = 2046.824 ; gain = 0.000 ; free physical = 1575 ; free virtual = 13103
-INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 11:19:17 2020...
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2090.363 ; gain = 0.000 ; free physical = 380 ; free virtual = 11933
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 12:07:06 2020...

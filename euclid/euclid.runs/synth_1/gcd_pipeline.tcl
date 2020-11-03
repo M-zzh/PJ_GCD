@@ -54,7 +54,7 @@ set_property used_in_implementation false [get_files /home/ubuntu/work/ic/gcd/eu
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 
-synth_design -top gcd_pipeline -part xc7z020clg400-1
+synth_design -top gcd_pipeline -part xc7z020clg400-1 -fanout_limit 32 -fsm_extraction one_hot -keep_equivalent_registers -resource_sharing off -no_lc -shreg_min_size 5
 
 
 # disable binary constraint mode for synth run checkpoints

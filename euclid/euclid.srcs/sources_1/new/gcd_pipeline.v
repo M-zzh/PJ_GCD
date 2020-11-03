@@ -29,7 +29,7 @@ module gcd_pipeline(
         output          [31:0]          RESULT,
 
         input                           START,
-        output  reg                     DONE
+        output                          DONE
     );
 
     wire                [31:0]          iCompA          [0:32];
@@ -57,5 +57,6 @@ module gcd_pipeline(
     endgenerate
 
     assign      RESULT      =           iCompA[32];
+    assign      DONE        =           1'b1;
 
 endmodule

@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Tue Nov  3 11:17:05 2020
-# Process ID: 32467
+# Start of session at: Tue Nov  3 12:04:51 2020
+# Process ID: 4742
 # Current directory: /home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1
 # Command line: vivado -log gcd_pipeline.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gcd_pipeline.tcl
 # Log file: /home/ubuntu/work/ic/gcd/euclid/euclid.runs/synth_1/gcd_pipeline.vds
